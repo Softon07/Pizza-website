@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pizzeriada</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/contact.css" />
+		<script src="https://kit.fontawesome.com/b0cb9ad87f.js"crossorigin="anonymous"></script>
+	</head>
+	<body class="bcg-img">
+		<!-- header -->
+		<header class="header">
+			<div class="header-rows">
+				<div class="logo">
+					<div class="wrapper">
+						<a href="index.html">
+							<img class="img-logo" src="./img/logo.png" alt="Pizzeriada" />
+						</a>
+					</div>
+				</div>
+
+				<div class="navigation">
+					<div class="wrapper">
+						<nav class="nav">
+							<a href="index.html" class="nav-items">strona główna</a>
+							<a href="o-nas.html" class="nav-items">o nas</a>
+							<a href="menu.html" class="nav-items">Menu</a>
+							<a href="kontakt.html" class="nav-items">Kontakt</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+		<main>
+			<!-- section 1 => contact-section -->
+			<section class="contact-section wrapper">
+				<div class="contact-header">
+					<p class="p1">Masz pytania?</p>
+					<p class="p2">Skontaktuj się z nami</p>
+					<p class="p3">Napisz lub zadzwoń do nas!</p>
+				</div>
+
+				<div class="contact-container">
+					<div class="map-container">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.7182326473317!2d19.124464615939544!3d50.27851950761916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716db660f473db7%3A0x8c20b95b2c176305!2sDworzec%20PKP%20Sosnowiec!5e0!3m2!1sen!2spl!4v1659548123421!5m2!1sen!2spl"
+							width="100%"
+							height="100%"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+
+					<div class="contact-info">
+						<div>
+							<p>Kamienna 31a</p>
+							<p>10-200 Dąbrowa Górnicza</p>
+							<p>Czujna 17 20-100</p>
+							<p>Sosnowiec</p>
+						</div>
+						<div>
+							<p>pizzeriada@gmail.com</p>
+						</div>
+						<div>
+							<p>DĄBROWA GÓRNICZA</p>
+							<p>tel: 48+ 111 222 333</p>
+							<p>SOSNOWIEC</p>
+							<p>tel: 48+ 333 222 111</p>
+						</div>
+						<div class="contact-social">
+							<a href="https://twitter.com/" target="_blank"
+								><i class="fa-brands fa-twitter-square"></i
+							></a>
+							<a href="https://www.facebook.com/" target="_blank"
+								><i class="fa-brands fa-facebook-square"></i
+							></a>
+							<a href="https://www.instagram.com/?hl=en" target="_blank"
+								><i class="fa-brands fa-instagram-square"></i
+							></a>
+							<a href="https://www.youtube.com/" target="_blank"
+								><i class="fa-brands fa-youtube-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section 2 =>  contact-form-section -->
+			<!-- https://pizzahut.pl/contact -->
+			<section class="contact-form-section wrapper">
+				<div class="contact-form-container">
+					<div class="contact-form-text">
+						<h1>SKONTAKTUJ SIĘ Z ZESPOŁEM CUSTOMER CARE</h1>
+						<p>
+							Jeśli masz pytanie lub sugestię dotyczącą marki Pizzeriada,
+							skontaktuj się z nami używając poniższego formularza.
+						</p>
+					</div>
+					<form action="kontakt.php" method="post">
+						<div class="input-area-container">
+							<div class="input-data-container">
+								<div class="row">
+									<label for="user-name">IMIĘ<span> *</span></label>
+									<input
+										type="text"
+										id="user-name"
+										placeholder="np. Jan"
+										required
+									/>
+								</div>
+								<div class="row">
+									<label for="surname">NAZWISKO<span> *</span></label>
+									<input
+										type="text"
+										id="surname"
+										placeholder="np. Kowalski"
+										required
+									/>
+								</div>
+								<div class="row">
+									<label for="kind-of-order"
+										>PROSIMY O WYBRANIE SPOSOBU DOKONANIA ZAMÓWIENIA<span>
+											*</span
+										></label
+									>
+									<select id="kind-of-order" name="kind-of-order">
+										<option value="" disabled selected hidden>
+											Rodzaj zamówienia
+										</option>
+										<option value="1">W restauracji</option>
+										<option value="2">Dostawa</option>
+										<option value="3">Na wynos</option>
+										<option value="4">Nie dotyczy</option>
+									</select>
+								</div>
+								<div class="row">
+									<label for="kind-of-order"
+										>PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
+										TWOJA WIADOMOŚĆ<span> *</span></label
+									>
+									<select id="kind-of-order" name="kind-of-order">
+										<option value="" disabled selected hidden>
+											Nazwa restauracji
+										</option>
+										<option value="DG">Dąbrowa Górnicza</option>
+										<option value="SS">Sosnowiec</option>
+									</select>
+								</div>
+								<div class="row">
+									<label for="message-topic"
+										>PROSIMY O WYBRANIE TEMATU WIADOMOŚCI<span> *</span></label
+									>
+									<select id="kind-of-order" name="kind-of-order">
+										<option value="" disabled selected hidden>
+											Temat wiadomości
+										</option>
+										<option value="OP">Opinia pozytywna</option>
+										<option value="ON">Opinia negatywna</option>
+										<option value="P">Pytanie</option>
+										<option value="S">Sugestia</option>
+									</select>
+								</div>
+							</div>
+							<div class="message-container">
+								<label for="text">TWOJA WIADOMOŚĆ<span> *</span></label>
+								<textarea
+									name="textarea"
+									value="text"
+									id="text"
+									cols="10"
+									rows="30"
+									required
+								></textarea>
+							</div>
+						</div>
+						<hr />
+						<div class="attachment-container">
+							<p>Dodaj załącznik zdjęcie/wideo</p>
+							<label for="myfile">
+								<div>
+									<p>Wybierz plik (max 1 MB)</p>
+									<input
+										type="file"
+										id="myfile"
+										class="myfile"
+										name="myfile"
+										accept="image/png, image/jpg, image/gif, image/jpeg"
+									/>
+								</div>
+							</label>
+						</div>
+						<hr />
+						<div class="kind-of-contact-container">
+							<p class="p-above">Jak możemy się z Tobą skontaktować?</p>
+							<div class="checkbox-container">
+								<div>
+									<label for="phone">
+										<input type="checkbox" id="phone" />Telefonicznie
+									</label>
+								</div>
+								<div>
+									<label for="email">
+										<input type="checkbox" id="email" />Poprzez wiadomość email
+									</label>
+								</div>
+								<div>
+									<label for="yes-no">
+										<input type="checkbox" id="yes-no" />Nie oczekuję kontaktu
+									</label>
+								</div>
+							</div>
+							<p class="p-below">Prosimy o wybranie formy kontaktu</p>
+							<div class="button-container">
+								<button type="submit" class="form-btn">Wyślij</button>
+							</div>
+							<div class="kind-of-contact-text">
+								<div>
+									<i class="fa-solid fa-lock"></i>
+								</div>
+								<div>
+									<p>
+										Administratorem Twoich danych osobowych jest Lorem sp. z
+										o.o. z siedzibą w Sosnowcu (11-111), ul. Górna 12-21. Twoje
+										dane osobowe będą przetwarzane w celu obsługi Twojego
+										zgłoszenia złożonego poprzez formularz kontaktowy W
+										przypadku, w którym Twoje zgłoszenie dotyczy restauracji
+										franczyzowej AmRest, oddzielnym administratorem Twoich
+										danych osobowych będzie ta restauracja. Więcej informacji na
+										temat przetwarzania Twoich danych w tym zakresie znajduje
+										się w naszej Polityce prywatności w sekcji „Franczyza”.
+										Więcej informacji na temat przetwarzania danych osobowych, w
+										tym o przysługujących Ci prawach, znajduje się w naszej
+										Polityce Prywatności.
+									</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="wrapper footer-elements">
+				
+				<div class="footer-logo">
+					<a href="index.html"><img src="./img/logo.png" alt="Pizzeriada"></a>
+				</div>
+	
+				<div class="footer-text">
+					<p>&copy; Pizzeriada 2022</p>
+				</div>
+	
+				<div class="footer-social">
+					<a href="https://www.facebook.com/" target="_blank">
+						<i class="fa-brands fa-facebook-square"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
