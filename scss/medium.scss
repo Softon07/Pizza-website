@@ -1,0 +1,40 @@
+@media (max-width: 767px) {
+	.nav {
+        .anchor {
+            display: none;
+        }
+        .burger-icon {
+			display: flex;
+		}
+	}
+
+    .header {
+        &__video {
+            display: none;
+        }
+        &__img {
+            display: block;
+            border: 0.4px solid $white;
+        }
+
+        &__title {
+            position: absolute;
+            top: 5em;
+            left: 5em;
+            z-index: 100;
+            background: none;
+            .logo {
+                font-size: 12rem;
+                color: $creamy;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}

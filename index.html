@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
     <script src="https://kit.fontawesome.com/b0cb9ad87f.js" crossorigin="anonymous"></script>
 </head>
     <body class="bcg-img">
@@ -22,25 +21,24 @@
                     <a href="#home"><p class="logo">Pizzeriada</p></a>
                 </div>
                 <div class="nav__anchors">
-                    <a href="#home" class="nav__item">strona główna</a>
-                    <a href="#opinion" class="nav__item">Opinie</a>
-                    <a href="#about" class="nav__item">o nas</a>
-                    <a href="#menu" class="nav__item">Menu</a>
-                    <a href="#contact" class="nav__item">Kontakt</a>
+                    <a href="#home" class="nav__item anchor">strona główna</a>
+                    <a href="#about" class="nav__item anchor">o nas</a>
+                    <a href="#menu" class="nav__item anchor">Menu</a>
+                    <a href="#contact" class="nav__item anchor">Kontakt</a>
+                    <button class="burger-icon">
+                        <i class="burger fa-solid fa-bars"></i>
+                    </button>
                 </div>    
             </div>
         </nav>
         
-        <!-- HEADER -->
         <header class="header" id="home"> 
             <video src="./video/Pizza.mp4" class="header__video" loop muted autoplay></video>
-            <div class="header__title">
-                <h1 class="logo">Pizzeriada</h1>
-            </div>
+            <img src="./img/pizzaheader.jpg" alt="sie później uzupełni" class="header__img">
 
             <div class="header__promotion">
-                <div> <!-- class="header__" -->
-                    <h1 class="header__heading">Promocja!</h1>
+                <div>
+                    <h1 class="header__heading">Promocja w Pizzeriad'zie</h1>
                     <p class="header__text">-50% na 2 dużą pizzę</p>
                     <a href="#menu" class="header__link">Sprawdź tutaj!</a>
                 </div>
@@ -48,18 +46,15 @@
 
         </header>
 
-        <!-- section2 => slider -->
         <section class="slider wrapper">
             <div class="slider__something">
 
             </div>
         </section>
 
-        <!-- section3 => opinion -->
-        <section class="opinion wrapper">
+        <!-- <section class="opinion wrapper">
             <h2 class="opinion__heading">Opinie naszych klientów</h2>     
             <div class="opinion__clients-list">
-                <!-- client 1 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -81,7 +76,6 @@
                     </div>
                 </div>
                 
-                <!-- client 2 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -95,7 +89,7 @@
 
                         </p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Michał, 05 sierpnia 2021</p>
                     </div>
@@ -105,7 +99,6 @@
                     </div>
                 </div>
 
-                <!-- client 3 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -117,7 +110,7 @@
                     <div class="opinion__testimonials">
                         <p>Jak zawsze - pizza ciepła, dobrze wypieczona, przywieziona w wyznaczonej godzinie. Polecam serdecznie.</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Kamil, 12 września 2021</p>
                     </div>
@@ -127,7 +120,6 @@
                     </div>
                 </div>
 
-                <!-- client 4 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -139,7 +131,7 @@
                     <div class="opinion__testimonials">
                         <p>Wszystko super!</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Robert, 03 stycznia 2022</p>
                     </div>
@@ -149,7 +141,6 @@
                     </div>
                 </div>
 
-                <!-- client 5 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -161,7 +152,7 @@
                     <div class="opinion__testimonials">
                         <p>Ok</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Paweł, 15 lutego 2022</p>
                     </div>
@@ -171,7 +162,6 @@
                     </div>
                 </div>
 
-                <!-- client 6 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -183,7 +173,7 @@
                     <div class="opinion__testimonials">
                         <p>Długie oczekiwanie na zamówienie.</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Małgorzata, 03 marca 2022</p>
                     </div>
@@ -193,7 +183,6 @@
                     </div>
                 </div>
 
-                <!-- client 7 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -205,7 +194,7 @@
                     <div class="opinion__testimonials">
                         <p>Smaczna pizza i bardzo miła obsługa :)</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Barbara, 11 kwietnia 2022</p>
                     </div>
@@ -215,7 +204,6 @@
                     </div>
                 </div>
 
-                <!-- client 8 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -227,7 +215,7 @@
                     <div class="opinion__testimonials">
                         <p>Jak zawsze szybko i smacznie</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Marcin, 30 kwietnia 2022</p>
                     </div>
@@ -237,7 +225,6 @@
                     </div>
                 </div>
 
-                <!-- client 9 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -249,7 +236,7 @@
                     <div class="opinion__testimonials">
                         <p>Dostawa bardzo sprawna, szkoda że wybór sosów ograniczono do trzech i sos serowe chili trzeba domawiać</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Mirosław, 18 maja 2022</p>
                     </div>
@@ -259,7 +246,6 @@
                     </div>
                 </div>
 
-                <!-- client 10 -->
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
@@ -271,7 +257,7 @@
                     <div class="opinion__testimonials">
                         <p>Polecam</p>
                     </div>
-                    <div class="opinion-line"></div> 
+                    <div class="opinion__line"></div> 
                     <div class="opinion__testimonials-author">
                         <p>Krzysztof, 29 czerwca 2022</p>
                     </div>
@@ -281,12 +267,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- ABOUT -->
-
-        <!-- section 4 -> about-us-info -->
-        <section class="about wrapper" id="about">
+        <!-- <section class="about wrapper" id="about">
             <div class="about__text-container">
                 <div class="about__title">
                     <em><p class="about__top-text">Dowiedz się więcej</p></em>
@@ -315,10 +298,9 @@
             <div class="about__photo">
                 <img src="./img/pizza_circle.png" alt="pizza okrągła" />
             </div>
-        </section>
+        </section> -->
 
-        <!-- section 5 -> short-info-section -->
-        <section class="short-info wrapper">
+        <!-- <section class="short-info wrapper">
             <div class="info">
                 <div class="info__element">
                     <i class="info__icon fa-solid fa-location-dot"></i>
@@ -365,10 +347,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- section 6 -> member-info-section -->
-        <section class="members wrapper">
+        <!-- <section class="members wrapper">
 
                 <h2 class="members__heading" id="members">Nasi pracownicy</h2>
 
@@ -407,11 +388,9 @@
 
             </div>
             
-        </section>
+        </section> -->
 
-        <!-- MENU -->
-        <!-- section 7 -->
-        <section class="menu-section" id="menu">
+        <!-- <section class="menu-section" id="menu">
             <div class="menu-container wrapper">
                 <div class="menu-header">
                     <p class="p1" >Dowiedz się więcej</p>
@@ -426,7 +405,7 @@
                 </div>
                 <hr />
                 <div class="pizza-choice">
-                    <!-- pizza number 1 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -445,7 +424,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 2 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -464,7 +443,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 3 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -483,7 +462,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 4 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>4. Hawajska</p>
@@ -499,7 +478,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 5 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>5. Uczta Mięsna</p>
@@ -515,7 +494,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 6 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -533,7 +512,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 7 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -552,7 +531,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 8 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>
@@ -571,7 +550,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 9 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>9. Fantazja</p>
@@ -587,7 +566,7 @@
                         <button class="btn">Dodaj do koszyka</button>
                     </div>
                     <hr />
-                    <!-- pizza number 10 -->
+
                     <div class="pizza-list">
                         <div class="pizza-name">
                             <p>10. Capriciosa</p>
@@ -604,11 +583,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- KONTAKT -->
-        <!-- section 8 => contact-section -->
-        <section class="contact-section wrapper" id="contact">
+        <!-- <section class="contact-section wrapper" id="contact">
             <div class="contact-header">
                 <p class="p1">Masz pytania?</p>
                 <p class="p2">Skontaktuj się z nami</p>
@@ -660,10 +637,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- section 9 =>  contact-form-section -->
-        <!-- https://pizzahut.pl/contact -->
-        <section class="contact-form-section wrapper">
+        </section> -->
+
+        <!-- <section class="contact-form-section wrapper">
             <div class="contact-form-container">
                 <div class="contact-form-text">
                     <h1>SKONTAKTUJ SIĘ Z ZESPOŁEM CUSTOMER CARE</h1>
@@ -813,14 +789,12 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
 
 
     </main>
 
-    <!-- FOOTER -->
-
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__item wrapper">
             <div>
                 <a href="#home"><p class="logo">Pizzeriada</p></a>
@@ -833,7 +807,7 @@
                 <a href="#contact" class="nav__item">Kontakt</a>
             </div>    
         </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/main.js"></script>
 </body>
