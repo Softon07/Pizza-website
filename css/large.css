@@ -1,5 +1,35 @@
 @media (min-width: 768px) {
-  .nav .burger-icon {
+  .nav-mobile {
     display: none;
+  }
+  .nav-desktop {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #b89b7e;
+    border: 1px solid white;
+  }
+  .nav-desktop__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding: 0.2em 1em;
+  }
+  .nav-desktop__logo {
+    font-size: 150px;
+    font-weight: normal;
+    text-transform: lowercase;
+    color: rgb(241, 189, 82);
+  }
+  .nav-desktop__anchors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=large.css.map */

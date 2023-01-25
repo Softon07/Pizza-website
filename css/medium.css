@@ -1,1 +1,5 @@
-/*# sourceMappingURL=medium.css.map */
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none;
+  }
+}/*# sourceMappingURL=medium.css.map */

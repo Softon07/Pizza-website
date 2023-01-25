@@ -1,40 +1,99 @@
 @media (max-width: 767px) {
-	.nav {
-        .anchor {
-            display: none;
-        }
-        .burger-icon {
-			display: flex;
-		}
-	}
+  .nav-desktop {
+    display: none;
+  }
 
-    .header {
-        &__video {
-            display: none;
-        }
-        &__img {
-            display: block;
-            border: 0.4px solid $white;
-        }
+  // NAV
+  .nav-mobile {
+    width: 100vw;
+    // height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #b89b7e;
+    border: 1px solid white;
 
-        &__title {
-            position: absolute;
-            top: 5em;
-            left: 5em;
-            z-index: 100;
-            background: none;
-            .logo {
-                font-size: 12rem;
-                color: $creamy;
-            }
-        }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      // margin: 0.4em 2em;
+      // padding: 0.2em 1em;
+      font-size: 1.8rem;
+      z-index: 100000;
+    }
+    .logo {
+      position: absolute;
+      right: 12rem;
     }
 
+    .burger-icon {
+      // position: absolute;
+      padding: 10px 20px;
+      transition: transform .3s;
+    }
 
+    &__anchors {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // width: 400px;
+      // transform: translateX(-40%);
+      // transition: transform 0.3s;
+    }
 
+    .burger-icon {
+      // display: none;
+      font-size: 5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
 
+  nav div ul {
+    // padding-top: 50px;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    left: -251px;
+    list-style: none;
+    background-color: red;
+    transition: transform 0.3s;
+    z-index: 11000000;
+  }
 
+  nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+  }
 
+  .active-menu {
+    transform: translateX(249px);
+  }
 
+  .hide {
+    display: none;
+  }
 
+  .header {
+    &__video {
+      display: none;
+    }
+    &__img {
+      display: block;
+      border: 0.4px solid $white;
+    }
+
+    &__title {
+      position: absolute;
+      top: 5em;
+      left: 5em;
+      z-index: 100;
+      background: none;
+    }
+  }
 }
