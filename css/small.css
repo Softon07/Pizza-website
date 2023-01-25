@@ -1,1 +1,5 @@
-/*# sourceMappingURL=small.css.map */
+@media (max-width: 576px) {
+  div {
+    width: 100px;
+  }
+}/*# sourceMappingURL=small.css.map */

@@ -17,14 +17,18 @@
     &__item {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      // align-items: center;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
       color: #000;
 
-      padding: 0.2em 1em;
-      // font-size: 1.8rem;
+      // margin: 0.3rem 0;
+      // margin-right: 0;
+      padding: 0 0.8em;
+      // padding-right: 0;
+      font-size: 1.8rem;
     }
 
     &__logo {
@@ -32,6 +36,7 @@
       font-family: "Caveat", cursive;
       font-weight: normal;
       text-transform: lowercase;
+      // text-decoration: none;
       color: rgb(241, 189, 82);
     }
 
@@ -45,14 +50,13 @@
       justify-content: center;
       align-items: center;
     }
-  }
-
-  &__item {
-    transition: color 0.1s;
-  }
-
-  &__item:hover {
-    color: #ffcc80;
-    color: #f1bd52;
+    &__item {
+      transition: color 0.1s;
+    }
+  
+    &__item:hover {
+      color: #ffcc80;
+      color: #f1bd52;
+    }
   }
 }

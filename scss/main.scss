@@ -1,4 +1,10 @@
-@import "./colors";
+// @import "./colors";
+$brown: #724e2b;
+$white:  rgb(236, 237, 238);
+$cocoa: #BFA182;
+$skin: #e9c19c;
+$creamy:#ffcc80; 
+$special-cream: #f1bd52;
 
 *,
 *::before,
@@ -18,6 +24,10 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: $brown;
   // overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 #about,
@@ -43,8 +53,10 @@ body {
 .logo {
   width: 20%;
   font-size: 5rem;
+  margin-top: 0.7rem;
+
   a {
-    padding: 10px 20px;
+    padding: 0 2rem;
     font-family: "Caveat", cursive;
     font-weight: normal;
     text-transform: lowercase;
@@ -52,14 +64,10 @@ body {
   }
 }
 
-
-
 .logo::first-letter {
   text-transform: uppercase;
 }
 
-// HOME
-// SECTION 1 HEADER
 .header {
   max-width: 100%;
   max-height: 100vh;
@@ -85,17 +93,6 @@ body {
     height: 100vh;
     object-fit: cover;
   }
-
-  // &__title {
-  // 	position: absolute;
-  // 	top: 10em;
-  // 	left: 10em;
-  // 	z-index: 100;
-  // 	background: rgba(0, 0, 0, 0.5);
-  // 	.logo {
-  // 		font-size: 18rem;
-  // 	}
-  // }
 
   &__promotion {
     position: absolute; // działa
@@ -152,6 +149,7 @@ body {
 // SECTION 2 SLIDER
 .slider {
   margin-top: 200px;
+
   &__something {
     width: 100%;
     height: 100px;
@@ -194,6 +192,7 @@ body {
     border: 1px solid #bfa182;
     border-radius: 8%;
   }
+
   &__stars {
     margin: 0px 0px 40px;
     display: flex;
@@ -221,6 +220,7 @@ body {
   &__annotation {
     height: 30%;
     padding: 30px 0px;
+
     .author {
       color: rgba(0, 0, 0, 0.6);
       color: #bfa182;
@@ -228,10 +228,6 @@ body {
   }
 }
 
-// ABOUT
-
-// main
-// SECTION 1 - about
 .about {
   width: 100vw;
   height: 660px;
@@ -269,6 +265,7 @@ body {
   &__description {
     padding: 2%;
     height: 60%;
+
     p {
       padding: 2%;
       font-size: 19px;
@@ -310,6 +307,7 @@ body {
     width: 40%;
     height: 70%;
     border-radius: 50%;
+
     img {
       width: 100%;
       height: 100%;
@@ -384,16 +382,6 @@ body {
   }
 }
 
-// MENU
-
-.header {
-  position: sticky;
-}
-* {
-  text-decoration: none;
-  // color: white;
-}
-// section 1 -> menu-section
 .fa-leaf {
   color: rgb(28, 238, 28);
 }
@@ -409,37 +397,44 @@ body {
 .menu-section {
   .menu-container {
     margin-top: 3%;
+
     .menu-header {
       display: flex;
       flex-direction: column;
       width: 100%;
       height: 15vh;
+
       p {
         display: flex;
         justify-content: center;
         align-items: center;
       }
+
       .p1 {
         font-style: italic;
         color: #e9c19c;
         font-size: 28px;
       }
+
       .p2 {
         font-weight: bolder;
         font-size: 34px;
         color: rgb(224, 224, 224);
       }
+
       .p3 {
         padding-top: 1.5%;
         font-size: 15px;
       }
     }
+
     .menu-list {
       width: 100%;
       height: 10vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
+
       // border: 1px solid white;
       a {
         display: flex;
@@ -451,21 +446,25 @@ body {
         transition: color 300ms;
         color: #ddd;
       }
+
       a:hover {
         color: red;
       }
     }
+
     .pizza-choice {
       width: 100%;
       height: 150vh;
       display: flex;
       flex-direction: column;
+
       .pizza-list {
         width: 100%;
         height: 10%;
         padding: 1%;
         display: flex;
         justify-content: space-between;
+
         .pizza-name {
           width: 50%;
           height: auto;
@@ -473,11 +472,13 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
+
           p {
             font-size: 25px;
             font-weight: bold;
             color: #ddd;
           }
+
           .components {
             p {
               width: 100%;
@@ -488,12 +489,14 @@ body {
             }
           }
         }
+
         .prices {
           width: 25%;
           height: auto;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           p {
             font-size: 20px;
             color: #ddd;
@@ -526,10 +529,12 @@ input:placeholder-shown {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   label {
     font-size: 12px;
     font-weight: bold;
   }
+
   input,
   select {
     width: 95%;
@@ -550,31 +555,37 @@ textarea {
   margin-top: 3%;
   color: #ddd;
   font-size: 22px;
+
   .contact-header {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 15vh;
+
     p {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .p1 {
       font-style: italic;
       color: #e9c19c;
       font-size: 28px;
     }
+
     .p2 {
       font-weight: bolder;
       font-size: 38px;
       color: rgb(224, 224, 224);
     }
+
     .p3 {
       padding-top: 1.5%;
       font-size: 15px;
     }
   }
+
   .contact-container {
     background: rgba(0, 0, 0, 0.25);
     width: 100%;
@@ -583,17 +594,20 @@ textarea {
     justify-content: space-around;
     align-items: center;
     border: 1px solid #ddd;
+
     .map-container {
       width: 50%;
       height: 80%;
       border: 1px solid #ddd;
     }
+
     .contact-info {
       display: flex;
       flex-direction: column;
       padding: 2%;
       width: 40%;
       height: 80%;
+
       // border: 1px solid royalblue;
       div {
         width: 100%;
@@ -606,19 +620,23 @@ textarea {
         border: 1px solid white;
         border-radius: 35%;
       }
+
       .contact-social {
         display: flex;
         flex-direction: row;
         text-decoration: none;
+
         .fa-brands {
           font-size: 60px;
           color: #ddd;
           transition: color 300ms, font-size 300ms;
         }
+
         .fa-brands:hover {
           color: #e9ab4e;
           font-size: 90px;
         }
+
         a {
           padding: 2%;
         }
@@ -634,6 +652,7 @@ textarea {
   justify-content: center;
   align-items: center;
   color: #ddd;
+
   .contact-form-container {
     width: 70%;
     height: 1290px;
@@ -641,21 +660,25 @@ textarea {
     margin-bottom: 3%;
     border: 1px solid #ddd;
     background: rgba(0, 0, 0, 0.25);
+
     .contact-form-text {
       h1 {
         font-size: 24px;
       }
+
       p {
         padding-top: 3%;
         padding-bottom: 3%;
         font-size: 17px;
       }
     }
+
     .input-area-container {
       display: flex;
       width: 100%;
       display: flex;
       padding-bottom: 5%;
+
       .input-data-container {
         width: 100%;
         display: flex;
@@ -664,6 +687,7 @@ textarea {
         align-items: flex-start;
       }
     }
+
     .message-container {
       display: flex;
       flex-direction: column;
@@ -672,16 +696,19 @@ textarea {
       height: 100%;
     }
   }
+
   .attachment-container {
     width: 30%;
     height: 100%;
     margin: 5% 0;
+
     // border: 1px solid lime;
     p {
       width: 120%;
       margin-bottom: 1.5%;
       font-size: 18px;
     }
+
     div {
       font-weight: normal;
       display: flex;
@@ -694,40 +721,49 @@ textarea {
       color: #f1bd52;
       transition: background 300ms, color 300ms;
       cursor: pointer;
+
       p {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
       }
+
       input {
         display: none;
       }
     }
+
     div:hover {
       background: rgba(0, 0, 0, 0.4);
     }
   }
+
   .kind-of-contact-container {
     width: 100%;
     height: auto;
     padding-top: 4%;
+
     .p-above {
       font-size: 20px;
       padding-bottom: 10px;
     }
+
     .p-below {
       padding-top: 10px;
       font-size: 14px;
       color: rgb(245, 119, 119);
     }
+
     .checkbox-container {
       div {
         display: flex;
+
         label {
           display: flex;
           align-items: center;
           cursor: pointer;
+
           input {
             width: 20px;
             height: 20px;
@@ -738,12 +774,14 @@ textarea {
         }
       }
     }
+
     .button-container {
       padding-top: 20px;
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: flex-end;
+
       .form-btn {
         width: 350px;
         height: 45px;
@@ -751,11 +789,14 @@ textarea {
         cursor: pointer;
       }
     }
+
     .kind-of-contact-text {
       display: flex;
       margin-top: 35px;
+
       div {
         padding-right: 20px;
+
         i {
           font-size: 30px;
           color: white;
@@ -764,8 +805,6 @@ textarea {
     }
   }
 }
-
-// FOOTER
 
 .footer {
   position: static;
@@ -788,6 +827,7 @@ textarea {
     text-decoration: none;
     color: #000;
   }
+
   &__anchors {
     display: flex;
   }
