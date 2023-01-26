@@ -63,11 +63,6 @@ a {
   max-height: 100vh;
   width: 100%;
 }
-.header__shadow {
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
 .header__video {
   width: 100%;
   height: 100vh;
@@ -83,46 +78,61 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header__promotion {
+.header__content {
   position: absolute;
-  top: 25em;
-  right: 15em;
-  width: 500px;
-  height: 250px;
-  border: 2px solid black;
-  border-radius: 40px;
-  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.header__text-container {
+  margin-left: 20rem;
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .header__heading {
-  padding-top: 20px;
-  font-size: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 3px;
+  font-family: "Caveat", cursive;
+  font-size: 10rem;
   color: #f1bd52;
 }
 .header__text {
-  font-size: 27px;
+  padding: 2.2rem 0;
+  width: 60%;
+  font-size: 2.4rem;
   color: white;
 }
+.header__text:nth-of-type(2) {
+  padding-bottom: 0;
+}
+.header__links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .header__link {
-  position: absolute;
-  padding: 1%;
-  bottom: 3%;
-  right: 10%;
-  width: 150px;
-  height: auto;
+  padding: 1.5rem 3rem;
+  margin: 4rem 2rem;
+  margin-left: 0;
+  height: 6rem;
   border: 1px solid black;
   background-color: #724e2b;
-  color: #ddd;
+  color: rgb(236, 237, 238);
   text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
-  border-radius: 20%;
-  transition: 350ms;
+  border-radius: 1rem;
+  transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
+}
+.header__link:nth-child(1) {
+  background-color: red;
+  color: rgb(236, 237, 238);
 }
 .header__link:hover {
   color: #724e2b;
@@ -780,7 +790,7 @@ textarea {
     left: -251px;
     list-style: none;
     background-color: #ffcc80;
-    border: 1px solid rgb(236, 237, 238);
+    border: 1px solid white;
     border-top: none;
     transition: transform 0.3s;
     z-index: 11000;
@@ -800,9 +810,6 @@ textarea {
   .hide {
     display: none;
   }
-  .header {
-    width: 100%;
-  }
   .header__video {
     display: none;
   }
@@ -810,12 +817,27 @@ textarea {
     display: block;
     border: 0.4px solid white;
   }
-  .header__title {
-    position: absolute;
-    top: 5em;
-    left: 5em;
-    z-index: 100;
-    background: none;
+  .header__text-container {
+    width: 38rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.4px solid white;
+  }
+  .header__heading {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 3.75rem;
+  }
+  .header__text {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+  }
+  .header__link {
+    margin: 2rem 0;
+    margin-left: 2rem;
   }
 }
 @media (min-width: 768px) {

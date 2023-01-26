@@ -46,7 +46,9 @@
     width: 250px;
     left: -251px;
     list-style: none;
-    background-color: red;
+    background-color: #ffcc80;
+    border: 1px solid white;
+    border-top: none;
     transition: transform 0.3s;
     z-index: 11000;
   }
@@ -65,9 +67,6 @@
   .hide {
     display: none;
   }
-  .header {
-    width: 100%;
-  }
   .header__video {
     display: none;
   }
@@ -75,11 +74,26 @@
     display: block;
     border: 0.4px solid white;
   }
-  .header__title {
-    position: absolute;
-    top: 5em;
-    left: 5em;
-    z-index: 100;
-    background: none;
+  .header__text-container {
+    width: 38rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.4px solid white;
+  }
+  .header__heading {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 3.75rem;
+  }
+  .header__text {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+  }
+  .header__link {
+    margin: 2rem 0;
+    margin-left: 2rem;
   }
 }/*# sourceMappingURL=medium.css.map */

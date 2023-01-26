@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,65 +9,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"/>
-    <script
-      src="https://kit.fontawesome.com/b0cb9ad87f.js"
-      crossorigin="anonymous"
-    ></script>
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b0cb9ad87f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body class="bcg-img">
+</head>
+
+<body class="bcg-img">
     <!-- main -->
     <main class="main">
-
-      <nav class="nav-mobile">
-        <div class="nav-mobile__item">
-            <div class="logo">
-                <a href="#home">Pizzeriada</></a>
+        <nav class="nav-mobile">
+            <div class="nav-mobile__item">
+                <div class="logo">
+                    <a href="#home">Pizzeriada</></a>
+                </div>
+                <ul class="nav-mobile__anchors">
+                    <li><a href="#home" class="nav-mobile__item">strona główna</a></li>
+                    <li><a href="#about" class="nav-mobile__item">o nas</a></li>
+                    <li><a href="#menu" class="nav-mobile__item">Menu</a></li>
+                    <li><a href="#contact" class="nav-mobile__item">Kontakt</a></li>
+                </ul>
+                <button class="burger-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fas fa-times hide"></i>
+                </button>
             </div>
-          <ul class="nav-mobile__anchors">
-            <li><a href="#home" class="nav-mobile__item">strona główna</a></li>
-            <li><a href="#about" class="nav-mobile__item">o nas</a></li>
-            <li><a href="#menu" class="nav-mobile__item">Menu</a></li>
-            <li><a href="#contact" class="nav-mobile__item">Kontakt</a></li>
-          </ul>
-          <button class="burger-icon">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fas fa-times hide"></i>
-          </button>
-        </div>
-      </nav>
+        </nav>
 
-      <nav class="nav-desktop">
-        <div class="nav-desktop__item wrapper">
-            <a href="#home" class="nav-desktop__logo">Pizzeriada</a>
-          <div class="nav-desktop__anchors">
-            <a href="#home" class="nav-desktop__item anchor">strona główna</a>
-            <a href="#about" class="nav-desktop__item anchor">o nas</a>
-            <a href="#menu" class="nav-desktop__item anchor">Menu</a>
-            <a href="#contact" class="nav-desktop__item anchor">Kontakt</a>
-          </div>
-      </nav>
+        <nav class="nav-desktop">
+            <div class="nav-desktop__item wrapper">
+                <a href="#home" class="nav-desktop__logo">Pizzeriada</a>
+                <div class="nav-desktop__anchors">
+                    <a href="#home" class="nav-desktop__item anchor">strona główna</a>
+                    <a href="#about" class="nav-desktop__item anchor">o nas</a>
+                    <a href="#menu" class="nav-desktop__item anchor">Menu</a>
+                    <a href="#contact" class="nav-desktop__item anchor">Kontakt</a>
+                </div>
+            </div>
+        </nav>
 
-      <header class="header" id="home">
-        <video
-          src="./video/Pizza.mp4" class="header__video" loop muted autoplay></video>
-        <img src="./img/pizzaheader.jpg" alt="sie później uzupełni" class="header__img"/>
 
-        <div class="header__promotion">
-          <div>
-            <h1 class="header__heading">Promocja w Pizzeriad'zie</h1>
-            <p class="header__text">-50% na 2 dużą pizzę</p>
-            <a href="#menu" class="header__link">Sprawdź tutaj!</a>
-          </div>
-        </div>
-      </header>
 
-      <section class="slider wrapper">
-        <div class="slider__something"></div>
-      </section>
 
-      <!-- <section class="opinion wrapper">
+
+
+
+
+
+
+
+
+
+
+        <header class="header" id="home">
+            <video src="./video/Pizza.mp4" class="header__video" loop muted autoplay></video>
+            <img src="./img/pizzaheader.jpg" alt="sie później uzupełni" class="header__img" />
+
+            <div class="header__content">
+                <div class="header__text-container">
+                    <h1 class="header__heading">Najlepsza pizza w regionie!</h1>
+                    <p class="header__text">Zapewniamy niepowtarzalny smak każdej naszej pizzy. Kto raz spróbuje to już zawsze do nas wraca!
+                    <p class="header__text">Wszystko co dla was przygotowujemy skomponowane z najlepszej jakości składników. Nasza oferta doskonale nadaje się na lunch w pracy, rodzinny obiad czy kolację z przyjaciółmi.</p>
+                    <div class="header__links">
+                        <a href="#menu" class="header__link">Zobacz Menu!</a>
+                        <a href="#contact" class="header__link">Zamów</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="slider wrapper">
+            <div class="slider__something"></div>
+        </section>
+
+        <!-- <section class="opinion wrapper">
             <h2 class="opinion__heading">Opinie naszych klientów</h2>     
             <div class="opinion__clients-list">
                 <div class="opinion__client-rating">
@@ -283,7 +299,7 @@
             </div>
         </section> -->
 
-      <section class="about wrapper" id="about">
+        <!-- <section class="about wrapper" id="about">
             <div class="about__text-container">
                 <div class="about__title">
                     <em><p class="about__top-text">Dowiedz się więcej</p></em>
@@ -312,9 +328,9 @@
             <div class="about__photo">
                 <img src="./img/pizza_circle.png" alt="pizza okrągła" />
             </div>
-        </section>
+        </section> -->
 
-      <!-- <section class="short-info wrapper">
+        <!-- <section class="short-info wrapper">
             <div class="info">
                 <div class="info__element">
                     <i class="info__icon fa-solid fa-location-dot"></i>
@@ -363,7 +379,7 @@
             </div>
         </section> -->
 
-      <!-- <section class="members wrapper">
+        <!-- <section class="members wrapper">
 
                 <h2 class="members__heading" id="members">Nasi pracownicy</h2>
 
@@ -404,7 +420,7 @@
             
         </section> -->
 
-      <!-- <section class="menu-section" id="menu">
+        <!-- <section class="menu-section" id="menu">
             <div class="menu-container wrapper">
                 <div class="menu-header">
                     <p class="p1" >Dowiedz się więcej</p>
@@ -599,7 +615,7 @@
             </div>
         </section> -->
 
-      <!-- <section class="contact-section wrapper" id="contact">
+        <!-- <section class="contact-section wrapper" id="contact">
             <div class="contact-header">
                 <p class="p1">Masz pytania?</p>
                 <p class="p2">Skontaktuj się z nami</p>
@@ -653,7 +669,7 @@
             </div>
         </section> -->
 
-      <!-- <section class="contact-form-section wrapper">
+        <!-- <section class="contact-form-section wrapper">
             <div class="contact-form-container">
                 <div class="contact-form-text">
                     <h1>SKONTAKTUJ SIĘ Z ZESPOŁEM CUSTOMER CARE</h1>
@@ -822,5 +838,6 @@
     </footer> -->
 
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,9 +1,9 @@
 // @import "./colors";
 $brown: #724e2b;
-$white:  rgb(236, 237, 238);
+$white: rgb(236, 237, 238);
 $cocoa: #BFA182;
 $skin: #e9c19c;
-$creamy:#ffcc80; 
+$creamy: #ffcc80;
 $special-cream: #f1bd52;
 
 *,
@@ -73,12 +73,6 @@ a {
   max-height: 100vh;
   width: 100%;
 
-  &__shadow {
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-  }
-
   &__video {
     width: 100%;
     height: 100vh;
@@ -94,50 +88,76 @@ a {
     object-fit: cover;
   }
 
-  &__promotion {
-    position: absolute; // działa
-    top: 25em;
-    right: 15em;
-    width: 500px;
-    height: 250px;
-    border: 2px solid black;
-    border-radius: 40px;
-    // z-index: 7;
-    background: rgba(0, 0, 0, 0.5);
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__text-container {
+    margin-left: 20rem;
+    margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   &__heading {
-    padding-top: 20px;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3px;
+    font-family: "Caveat", cursive;
+    font-size: 10rem;
     color: #f1bd52;
   }
 
   &__text {
-    font-size: 27px;
+    // margin-bottom: 2rem;
+    // padding-top: 0;
+    // padding-bottom: 0;
+    padding: 2.2rem 0;
+    width: 60%;
+    font-size: 2.4rem;
     color: white;
   }
 
+  &__text:nth-of-type(2) {
+    padding-bottom: 0;
+  }
+
+  // &__text:nth-child(4) {
+  //   margin-top: 3rem;
+  // }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__link {
-    position: absolute;
-    padding: 1%;
-    bottom: 3%;
-    right: 10%;
-    width: 150px;
-    height: auto;
+    padding: 1.5rem 3rem;
+    margin: 4rem 2rem;
+    margin-left: 0;
+    height: 6rem;
     border: 1px solid black;
-    background-color: #724e2b;
-    color: #ddd;
+    background-color: $brown;
+    color: $white;
     text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    border-radius: 20%;
-    transition: 350ms;
+    border-radius: 1rem;
+    transition: color 0.3s, background-color 0.3s;
     cursor: pointer;
+  }
+
+  &__link:nth-child(1) {
+    background-color:  red;
+    color: $white;
   }
 
   &__link:hover {

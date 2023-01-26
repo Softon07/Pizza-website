@@ -50,10 +50,11 @@
       justify-content: center;
       align-items: center;
     }
+
     &__item {
       transition: color 0.1s;
     }
-  
+
     &__item:hover {
       color: #ffcc80;
       color: #f1bd52;

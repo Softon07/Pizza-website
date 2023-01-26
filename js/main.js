@@ -12,6 +12,7 @@ const handleNav = () => {
 } 
 
 burgerBtn.addEventListener('click', handleNav);
+
 anchorList.forEach(singleA => {
     singleA.addEventListener('click', handleNav);
 });
