@@ -1,5 +1,13 @@
-@media (max-width: 576px) {
-    div {
-        width: 100px;
+@media (max-width: 550px) {
+
+    .slider {
+        &__slides {
+            img {
+                width: 100%;
+            }
+        }
     }
+
+
+
 }

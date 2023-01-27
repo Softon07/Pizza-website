@@ -1,5 +1,5 @@
-@media (max-width: 576px) {
-  div {
-    width: 100px;
+@media (max-width: 550px) {
+  .slider__slides img {
+    width: 100%;
   }
 }/*# sourceMappingURL=small.css.map */

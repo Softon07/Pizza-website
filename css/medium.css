@@ -96,4 +96,17 @@
     margin: 2rem 0;
     margin-left: 2rem;
   }
+  .slider {
+    border: none;
+    background: none;
+  }
+  .slider__slides img {
+    width: 50%;
+  }
+  .slider i:first-child {
+    left: 0;
+  }
+  .slider i:last-child {
+    right: 0;
+  }
 }/*# sourceMappingURL=medium.css.map */

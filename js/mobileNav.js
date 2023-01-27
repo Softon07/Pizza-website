@@ -11,8 +11,7 @@ const handleNav = () => {
     barsIcon.classList.toggle('hide');
 } 
 
-burgerBtn.addEventListener('click', handleNav);
-
 anchorList.forEach(singleA => {
     singleA.addEventListener('click', handleNav);
 });
+burgerBtn.addEventListener('click', handleNav);

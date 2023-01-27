@@ -48,19 +48,6 @@
             </div>
         </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         <header class="header" id="home">
             <video src="./video/Pizza.mp4" class="header__video" loop muted autoplay></video>
             <img src="./img/pizzaheader.jpg" alt="sie później uzupełni" class="header__img" />
@@ -78,20 +65,38 @@
             </div>
         </header>
 
-        <section class="slider wrapper">
-            <div class="slider__something"></div>
+        <section class="slider wrapper"> 
+            <div class="slider__title">
+                <h2>Nasze pizze</h2>
+            </div>
+            <div class="slider__container ">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="slider__slides">
+                    <img src="./img/sliderPizza/pizza1.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza2.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza3.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza4.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza5.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza6.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza7.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza8.jpg" alt="" draggable="false">
+                    <img src="./img/sliderPizza/pizza9.jpg" alt="" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
         </section>
 
-        <!-- <section class="opinion wrapper">
+        <section class="opinion wrapper">
             <h2 class="opinion__heading">Opinie naszych klientów</h2>     
             <div class="opinion__clients-list">
+                
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Przepyszna pizza i przemiły uśmiechnęty kurier! :)</p>
@@ -135,7 +140,7 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
+                        <i class="fa-solid fa-star star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Jak zawsze - pizza ciepła, dobrze wypieczona, przywieziona w wyznaczonej godzinie. Polecam serdecznie.</p>
@@ -156,7 +161,7 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
+                        <i class="fa-solid fa-star star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Wszystko super!</p>
@@ -176,8 +181,6 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Ok</p>
@@ -194,7 +197,6 @@
 
                 <div class="opinion__client-rating">
                     <div class="opinion__stars">
-                        <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
@@ -219,7 +221,7 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
+                        <i class="fa-solid fa-star star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Smaczna pizza i bardzo miła obsługa :)</p>
@@ -240,7 +242,7 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
+                        <i class="fa-solid fa-star star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Jak zawsze szybko i smacznie</p>
@@ -261,7 +263,7 @@
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
                         <i class="fa-solid fa-star star"></i>
-                        <i class="fa-regular fa-star-half-stroke star"></i>
+                        <i class="fa-solid fa-star star"></i>
                     </div>
                     <div class="opinion__testimonials">
                         <p>Dostawa bardzo sprawna, szkoda że wybór sosów ograniczono do trzech i sos serowe chili trzeba domawiać</p>
@@ -297,7 +299,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section class="about wrapper" id="about">
             <div class="about__text-container">
@@ -837,7 +839,8 @@
         </div>
     </footer> -->
 
-    <script src="./js/main.js"></script>
+    <script src="./js/mobileNav.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
