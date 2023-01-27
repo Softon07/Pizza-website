@@ -146,6 +146,26 @@
     }
   }
 
+  .opinion {
+    margin-top: 2rem;
+    border: none;
+    background: none;
+
+    &__heading {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Caveat", cursive;
+      font-size: 6.5rem;
+      color: white;
+    }
+
+    &__client-rating {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+  }
 
 
 

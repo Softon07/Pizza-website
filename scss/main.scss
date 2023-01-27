@@ -112,9 +112,6 @@ a {
   }
 
   &__text {
-    // margin-bottom: 2rem;
-    // padding-top: 0;
-    // padding-bottom: 0;
     padding: 2.2rem 0;
     width: 60%;
     font-size: 2.4rem;
@@ -124,10 +121,6 @@ a {
   &__text:nth-of-type(2) {
     padding-bottom: 0;
   }
-
-  // &__text:nth-child(4) {
-  //   margin-top: 3rem;
-  // }
 
   &__links {
     width: 100%;
@@ -168,11 +161,11 @@ a {
 
 
 .slider {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.4);
-  &__title {
+  &__heading {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -243,15 +236,22 @@ a {
 
 }
 
-
-// SECTION 3 -> OPINION
 .opinion {
-  margin-top: auto;
-  margin-bottom: 50px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  // padding: 10rem;
   color: rgb(236, 237, 238);
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.4);
 
   &__heading {
-    font-size: 40px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat", cursive;
+    font-size: 7rem;
+    color: white;
   }
 
   &__clients-list {
@@ -265,16 +265,17 @@ a {
   }
 
   &__client-rating {
-    width: 550px;
+    width: 420px;
     // height: auto;
     height: 70%;
-    margin-right: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 50px;
     padding: 50px;
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.3);
     border: 1px solid #bfa182;
     border-radius: 8%;
   }
@@ -312,6 +313,29 @@ a {
       color: #bfa182;
     }
   }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat", cursive;
+    font-size: 4rem;
+    color: white;
+  }
+
+  &__form {
+    margin: 2rem;
+    // width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
 }
 
 // .about {

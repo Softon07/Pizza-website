@@ -109,4 +109,21 @@
   .slider i:last-child {
     right: 0;
   }
+  .opinion {
+    margin-top: 2rem;
+    border: none;
+    background: none;
+  }
+  .opinion__heading {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat", cursive;
+    font-size: 6.5rem;
+    color: white;
+  }
+  .opinion__client-rating {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }/*# sourceMappingURL=medium.css.map */

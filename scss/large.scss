@@ -60,4 +60,10 @@
       color: #f1bd52;
     }
   }
+
+  .opinion {
+    &__client-rating {
+      background: none;
+    }
+  }
 }
