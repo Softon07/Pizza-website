@@ -297,12 +297,40 @@
                         <p class="author">~ Zespół Pizzeriada</p>
                     </div>
                 </div>
+
+                
             </div>
 
             <h3>Podziel się z nami swoją opinią!</h3>
-            <div class="opinion__form">
-                soon!
-            </div>
+                <form class="form" autocomplete="off">
+
+                    <div class="form__input-container form__stars">
+                        <label for="stars">Ocena</label>
+                        <div>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                        <!-- <input id="stars" type="text"> -->
+                    </div>
+                    
+                    <div class="form__input-container form__name">
+                        <label for="name">Twoje imię</label>
+                        <input id="name" type="text">
+                    </div>
+
+                    <div class="form__input-container form__opinion">
+                        <label for="testimonials">Opinia</label>
+                        <input id="testimonials" type="text">
+                    </div>
+
+                    <div class="form__input-container">
+                        <button class="form__input-container form__btn">Dodaj!</button>
+                    </div>
+
+                </form>
 
         </section>
 
@@ -846,6 +874,7 @@
 
     <script src="./js/mobileNav.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/opinion.js"></script>
 </body>
 
 </html>

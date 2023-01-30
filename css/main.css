@@ -82,7 +82,7 @@ a {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
 }
 .header__text-container {
@@ -170,7 +170,7 @@ a {
   position: absolute;
   line-height: 4.6rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   background: #fff;
   border-radius: 50%;
   cursor: pointer;
@@ -284,13 +284,70 @@ a {
   font-size: 4rem;
   color: white;
 }
-.opinion__form {
-  margin: 2rem;
-  height: 100px;
-  border: 1px solid white;
+
+.form {
+  min-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem 15rem 5rem 15rem;
+  width: auto;
+  height: auto;
+  border: 1px solid #bfa182;
+}
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.form__input-container input {
+  width: 100%;
+  height: 5rem;
+  border-radius: 1.5rem;
+}
+.form__input-container label {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.form__stars {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form__stars i {
+  font-size: 3rem;
+}
+.form__opinion input {
+  height: 200px;
+}
+.form__btn {
+  position: relative;
+  width: 20rem;
+  height: 10px;
+  margin-left: 0;
+  padding: 1.5rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 6rem;
+  border: 1px solid black;
+  background-color: #724e2b;
+  color: rgb(236, 237, 238);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+.form__btn:hover {
+  color: #724e2b;
+  background-color: #ddd;
 }
 
 @media (min-width: 768px) {
@@ -470,6 +527,10 @@ a {
   }
   .opinion__client-rating {
     background: rgba(0, 0, 0, 0.3);
+  }
+  .form {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.4);
   }
 }
 @media (max-width: 550px) {
