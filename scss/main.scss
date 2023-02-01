@@ -269,7 +269,6 @@ a {
 
   &__client-rating {
     width: 420px;
-    // height: auto;
     height: 70%;
     margin-right: 10px;
     margin-left: 10px;
@@ -280,7 +279,7 @@ a {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid $border-color;
-    border-radius: 8%;
+    border-radius: 2.5rem;
   }
 
   &__stars {
@@ -338,6 +337,15 @@ a {
   width: auto;
   height: auto;
   border: 1px solid $border-color;
+  border-radius: 2.5rem;
+
+  .star {
+    cursor: pointer;
+  }
+
+  .star:hover {
+    color: #facd19;
+  }
 
   &__input-container {
     display: flex;
@@ -348,11 +356,15 @@ a {
     // height: 100px;
     // border: 1px solid yellow;
 
-    input {
+    input, textarea {
       width: 100%;
       height: 5rem;
+      padding: 1rem;
+      font-size: 2rem;
       border-radius: 1.5rem;
     }
+
+    
     label {
       font-size: 2.3rem;
       margin-bottom: 1rem;
@@ -362,7 +374,6 @@ a {
 
   &__stars {
     display: flex;
-    // flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     i {
@@ -371,28 +382,28 @@ a {
   }
 
   &__opinion {
-    input {
-      height: 200px;
+    textarea {
+      height: 16rem;
+      resize: none;
     }
   }
 
   &__btn {
     position: relative;
-    width: 20rem;
-    height: 10px;
+    width: 18rem;
+    height: 6rem;
+    padding: 2rem 4rem;
     margin-left: 0;
-    padding: 1.5rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem;
+    font-size: 1.6rem;
     border: 1px solid black;
     background-color: $brown;
     color: $white;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 1rem;
-    font-size: 1.6rem;
     transition: color 0.3s, background-color 0.3s;
     cursor: pointer;
   }
