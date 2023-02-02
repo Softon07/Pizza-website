@@ -159,7 +159,6 @@ a {
   }
 }
 
-
 .slider {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -585,137 +584,150 @@ a {
   }
 }
 
-// .fa-leaf {
-//   color: rgb(28, 238, 28);
-// }
+.fa-leaf {
+  color: rgb(28, 238, 28);
+}
 
-// .fa-pepper-hot {
-//   color: rgb(230, 36, 36);
-// }
+.fa-pepper-hot {
+  color: rgb(230, 36, 36);
+}
 
-// .fa-fish {
-//   color: rgb(83, 124, 245);
-// }
+.fa-fish {
+  color: rgb(83, 124, 245);
+}
 
-// .menu-section {
-//   .menu-container {
-//     margin-top: 3%;
+.menu {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.4);
 
-//     .menu-header {
-//       display: flex;
-//       flex-direction: column;
-//       width: 100%;
-//       height: 15vh;
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Caveat", cursive;
+    font-size: 6rem;
+    color: $white;
+  }
 
-//       p {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//       }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-color;
+    border-radius: 5rem;
 
-//       .p1 {
-//         font-style: italic;
-//         color: #e9c19c;
-//         font-size: 28px;
-//       }
+    a {
+      font-size: 4rem;
+      font-weight: bold;
+      font-family: "Caveat", cursive;
+      color: $white;
+      transition: color 300ms;
+      cursor: pointer;
+    }
 
-//       .p2 {
-//         font-weight: bolder;
-//         font-size: 34px;
-//         color: rgb(224, 224, 224);
-//       }
+    a:hover {
+      color: $special-cream;
+    }
+  }
 
-//       .p3 {
-//         padding-top: 1.5%;
-//         font-size: 15px;
-//       }
-//     }
+  .pizza {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-//     .menu-list {
-//       width: 100%;
-//       height: 10vh;
-//       display: flex;
-//       justify-content: space-around;
-//       align-items: center;
+    &__list {
+      margin: 2rem;
+      border-bottom: 1px solid $border-color;
+      border-radius: 2rem;
+      height: 10%;
+      padding: 1%;
+      display: flex;
+      justify-content: space-between;
+    }
 
-//       // border: 1px solid white;
-//       a {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         font-size: 25px;
-//         font-weight: bold;
-//         transition: color 300ms;
-//         color: #ddd;
-//       }
+    &__list:last-child {
+      margin-bottom: 5rem;
+    }
 
-//       a:hover {
-//         color: red;
-//       }
-//     }
+    &__name {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
 
-//     .pizza-choice {
-//       width: 100%;
-//       height: 150vh;
-//       display: flex;
-//       flex-direction: column;
+      p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #ddd;
+      }
+    }
 
-//       .pizza-list {
-//         width: 100%;
-//         height: 10%;
-//         padding: 1%;
-//         display: flex;
-//         justify-content: space-between;
+    &__components {
+      p {
+        width: 100%;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #e9c19c;
+      }
+    }
 
-//         .pizza-name {
-//           width: 50%;
-//           height: auto;
-//           display: flex;
-//           flex-direction: column;
-//           justify-content: center;
-//           align-items: flex-start;
+    &__prices {
+      width: 25%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-//           p {
-//             font-size: 25px;
-//             font-weight: bold;
-//             color: #ddd;
-//           }
+      p {
+        font-size: 20px;
+        color: #ddd;
+      }
+    }
 
-//           .components {
-//             p {
-//               width: 100%;
-//               padding-top: 10px;
-//               font-size: 18px;
-//               font-weight: normal;
-//               color: #e9c19c;
-//             }
-//           }
-//         }
+    &__btn {
+      padding: 1.5rem 3rem;
+      border: 1px solid black;
+      background-color: $brown;
+      height: 6rem;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 1rem;
+      transition: color 0.1s, background-color 0.1s;
+      cursor: pointer;
+      font-size: 1.4rem;
+    }
+    &__btn:hover {
+      color: #724e2b;
+      background-color: #ddd;
+    }
+  }
 
-//         .prices {
-//           width: 25%;
-//           height: auto;
-//           display: flex;
-//           justify-content: space-between;
-//           align-items: center;
 
-//           p {
-//             font-size: 20px;
-//             color: #ddd;
-//           }
-//         }
 
-//         .btn {
-//           width: 14%;
-//           height: auto;
-//           margin: 3%;
-//           cursor: pointer;
-//         }
-//       }
-//     }
-//   }
-// }
+
+  // .sauce {}
+
+  // .promotion {}
+
+  // .drinks {}
+  
+  .not-visible {
+    display: none;
+  }
+}
+
+
+
+
 
 // .header {
 //   position: sticky;

@@ -41,7 +41,6 @@
     transition: color 0.1s;
   }
   .nav-desktop__item:hover {
-    color: #ffcc80;
     color: #f1bd52;
   }
   .opinion__client-rating {
