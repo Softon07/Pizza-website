@@ -437,22 +437,19 @@ a {
     padding-left: 3rem;
     padding-top: 3rem;
   }
-  
+
   h2 {
     font-family: "Caveat", cursive;
     font-weight: bold;
     font-size: 6rem;
   }
-  
+
   &__description {
     display: flex;
     padding: 2rem;
     padding-left: 4rem;
     width: 100%;
-    // height: 100%;
   }
-
-
 
   &__text-container {
     display: flex;
@@ -473,6 +470,7 @@ a {
   &__read-more-btn {
     padding-top: 2rem;
     margin-bottom: 1.5rem;
+
     .btn {
       padding: 1.5rem 3rem;
       margin-left: 0;
@@ -501,6 +499,7 @@ a {
     flex-direction: row-reverse;
     width: 50%;
     height: 100%;
+
     img {
       width: 88%;
       border-radius: 50%;
@@ -508,40 +507,41 @@ a {
   }
 }
 
-// // SECTION 2 - short-info, info
-// .short-info {
-//   margin-top: 80px;
-//   padding: 15px 30px;
-//   border: 0.5px solid white;
-//   color: white;
-//   background: rgba(0, 0, 0, 0.25);
-// }
+// SECTION 2 - short-info, info
+.info {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  // padding: 1.5rem 3rem;
+  border: 0.5px solid white;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
 
-// .info {
-//   padding: 0 0px;
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   grid-template-rows: 1fr;
+  &__short {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: 1fr;
+  }
 
-//   &__element {
-//     padding: auto;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-//   }
+  &__element {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-//   &__icon {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     font-size: 50px;
-//   }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
 
-//   &__text {
-//     text-align: center;
-//   }
-// }
+  &__text {
+    text-align: center;
+  }
+}
 
 // // SECTION 3 - member-info-section
 // .members {

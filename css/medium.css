@@ -97,6 +97,7 @@
     margin-left: 2rem;
   }
   .slider {
+    width: 90%;
     border: none;
     background: none;
   }
@@ -110,6 +111,7 @@
     right: 0;
   }
   .opinion {
+    width: 90%;
     margin-top: 2rem;
     border: none;
     background: none;
@@ -130,6 +132,9 @@
     margin: 0;
     background: rgba(0, 0, 0, 0.4);
   }
+  .about {
+    width: 90%;
+  }
   .about__text-container {
     padding: 2rem;
     width: 100%;
@@ -137,5 +142,11 @@
   }
   .about__photo {
     display: none;
+  }
+  .info {
+    width: 90%;
+  }
+  .info__short {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=medium.css.map */
