@@ -301,8 +301,7 @@ a {
 .form .fa-star {
   cursor: pointer;
 }
-.form .highlight,
-.form .highlited {
+.form .highlight {
   color: #facd19;
 }
 .form__input-container {
@@ -312,7 +311,8 @@ a {
   padding: 10px;
   width: 100%;
 }
-.form__input-container input, .form__input-container textarea {
+.form__input-container input,
+.form__input-container textarea {
   width: 100%;
   height: 5rem;
   padding: 1rem;
@@ -358,6 +358,85 @@ a {
 .form__btn:hover {
   color: #724e2b;
   background-color: #ddd;
+}
+
+.about {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ddd;
+}
+.about__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+.about__top-text {
+  color: #e9c19c;
+  font-size: 2.8rem;
+}
+.about__middle-text {
+  font-weight: bold;
+  font-size: 3.8rem;
+}
+.about__description {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+}
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+  padding-left: 2rem;
+}
+.about__text-container p {
+  padding: 2rem;
+  padding-left: 0rem;
+  font-size: 2rem;
+}
+.about__read-more-btn {
+  padding-top: 2rem;
+}
+.about__read-more-btn .btn {
+  padding: 1.5rem 3rem;
+  margin-left: 0;
+  height: 6rem;
+  border: 1px solid black;
+  background-color: #724e2b;
+  color: rgb(236, 237, 238);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 1rem;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+.about__read-more-btn .btn:hover {
+  color: #724e2b;
+  background-color: rgb(236, 237, 238);
+}
+.about__photo {
+  width: 45%;
+  height: 100%;
+}
+.about__photo img {
+  width: 80%;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -541,6 +620,14 @@ a {
   .form {
     margin: 0;
     background: rgba(0, 0, 0, 0.4);
+  }
+  .about__text-container {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  .about__photo {
+    display: none;
   }
 }
 @media (max-width: 550px) {

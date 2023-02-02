@@ -333,7 +333,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin:  2rem 15rem 5rem 15rem;
+  margin: 2rem 15rem 5rem 15rem;
   width: auto;
   height: auto;
   border: 1px solid $border-color;
@@ -343,8 +343,7 @@ a {
     cursor: pointer;
   }
 
-  .highlight,
-  .highlited {
+  .highlight {
     color: #facd19;
   }
 
@@ -355,7 +354,8 @@ a {
     padding: 10px;
     width: 100%;
 
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
       height: 5rem;
       padding: 1rem;
@@ -363,7 +363,7 @@ a {
       border-radius: 1.5rem;
     }
 
-    
+
     label {
       font-size: 2.3rem;
       margin-bottom: 1rem;
@@ -375,6 +375,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     i {
       font-size: 3rem;
     }
@@ -416,94 +417,100 @@ a {
 
 
 
-// .about {
-//   width: 100vw;
-//   height: 660px;
-//   margin-top: 3%;
-//   display: flex;
-//   background: rgba(0, 0, 0, 0.25);
-//   justify-content: space-around;
-//   color: #ddd;
-//   align-items: center;
-//   border: 1px solid #ddd;
+.about {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ddd;
 
-//   &__text-container {
-//     padding: 2%;
-//     flex-direction: column;
-//     width: 50%;
-//     height: 90%;
-//   }
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
 
-//   &__title {
-//     height: 20%;
-//     padding-left: 4%;
-//   }
+  &__top-text {
+    color: #e9c19c;
+    font-size: 2.8rem;
+  }
 
-//   &__top-text {
-//     color: #e9c19c;
-//     font-size: 28px;
-//   }
+  &__middle-text {
+    font-weight: bold;
+    font-size: 3.8rem;
+  }
 
-//   &__middle-text {
-//     font-weight: bolder;
-//     font-size: 38px;
-//     color: rgb(224, 224, 224);
-//   }
 
-//   &__description {
-//     padding: 2%;
-//     height: 60%;
 
-//     p {
-//       padding: 2%;
-//       font-size: 19px;
-//     }
-//   }
+  &__description {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    // height: 100%;
+  }
 
-//   &__read-more-btn {
-//     height: 20%;
-//     padding-left: 2%;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
 
-//     .btn {
-//       width: 40%;
-//       height: 50%;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       font-size: 22px;
-//       text-align: center;
-//       font-weight: bold;
-//       text-decoration: none;
-//       border: 1px solid black;
-//       color: #ddd;
-//       background-color: #724e2b;
-//       border-radius: 20%;
-//       transition: background-color 300ms;
-//       cursor: pointer;
-//     }
 
-//     .btn:hover {
-//       color: #724e2b;
-//       background-color: #ddd;
-//     }
-//   }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 55%;
+    height: 100%;
+    padding-left: 2rem;
 
-//   &__photo {
-//     width: 40%;
-//     height: 70%;
-//     border-radius: 50%;
+    p {
+      padding: 2rem;
+      padding-left: 0rem;
+      font-size: 2rem;
+    }
+  }
 
-//     img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//       border-radius: 50%;
-//     }
-//   }
-// }
+  &__read-more-btn {
+    padding-top: 2rem;
+
+
+    .btn {
+      padding: 1.5rem 3rem;
+      margin-left: 0;
+      height: 6rem;
+      border: 1px solid black;
+      background-color: $brown;
+      color: $white;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border-radius: 1rem;
+      transition: color 0.3s, background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      color: $brown;
+      background-color: $white;
+    }
+  }
+
+  &__photo {
+    width: 45%;
+    height: 100%;
+    img {
+      width: 80%;
+      border-radius: 50%;
+    }
+  }
+}
 
 // // SECTION 2 - short-info, info
 // .short-info {
