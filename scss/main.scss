@@ -437,22 +437,17 @@ a {
     padding-left: 3rem;
     padding-top: 3rem;
   }
-
-  &__top-text {
-    color: #e9c19c;
-    font-size: 2.8rem;
-  }
-
-  &__middle-text {
+  
+  h2 {
+    font-family: "Caveat", cursive;
     font-weight: bold;
-    font-size: 3.8rem;
+    font-size: 6rem;
   }
-
-
-
+  
   &__description {
     display: flex;
     padding: 2rem;
+    padding-left: 4rem;
     width: 100%;
     // height: 100%;
   }
@@ -464,7 +459,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 55%;
+    width: 50%;
     height: 100%;
     padding-left: 2rem;
 
@@ -477,8 +472,7 @@ a {
 
   &__read-more-btn {
     padding-top: 2rem;
-
-
+    margin-bottom: 1.5rem;
     .btn {
       padding: 1.5rem 3rem;
       margin-left: 0;
@@ -503,10 +497,12 @@ a {
   }
 
   &__photo {
-    width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
     height: 100%;
     img {
-      width: 80%;
+      width: 88%;
       border-radius: 50%;
     }
   }
