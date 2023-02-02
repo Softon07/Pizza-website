@@ -298,10 +298,11 @@ a {
   border: 1px solid #bfa182;
   border-radius: 2.5rem;
 }
-.form .star {
+.form .fa-star {
   cursor: pointer;
 }
-.form .star:hover {
+.form .highlight,
+.form .highlited {
   color: #facd19;
 }
 .form__input-container {
