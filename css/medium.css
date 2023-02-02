@@ -149,4 +149,10 @@
   .info__short {
     grid-template-columns: repeat(1, 1fr);
   }
+  .members {
+    width: 90%;
+  }
+  .members__member {
+    width: 100%;
+  }
 }/*# sourceMappingURL=medium.css.map */

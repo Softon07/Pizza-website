@@ -198,7 +198,14 @@
     &__short {
       grid-template-columns: repeat(1, 1fr);
     }
+  }
 
+  .members {
+    width: 90%;
+
+    &__member {
+      width: 100%;
+    }
   }
 
 
