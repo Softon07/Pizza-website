@@ -155,4 +155,32 @@
   .members__member {
     width: 100%;
   }
+  .menu {
+    width: 90%;
+  }
+  .menu__list a {
+    font-size: 3.2rem;
+  }
+  .menu .pizza__prices {
+    display: none;
+  }
+  .menu .pizza__btn {
+    padding: 0.5rem 1rem;
+    height: 5.5rem;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__map {
+    margin-top: 2.5rem;
+    width: 80%;
+    height: 80vh;
+  }
+  .contact__info {
+    margin: 0rem;
+    width: 80%;
+  }
 }/*# sourceMappingURL=medium.css.map */

@@ -177,10 +177,10 @@ a {
   transform: translateY(-50%);
 }
 .slider i:first-child {
-  left: -2.3rem;
+  left: 0;
 }
 .slider i:last-child {
-  right: -2.3rem;
+  right: 0;
 }
 .slider__slides {
   font-size: 0;
@@ -575,7 +575,7 @@ a {
   margin-bottom: 5rem;
 }
 .menu .pizza__name {
-  width: 50%;
+  width: 50rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -583,8 +583,8 @@ a {
   align-items: flex-start;
 }
 .menu .pizza__name p {
-  font-size: 25px;
   font-weight: bold;
+  font-size: 25px;
   color: #ddd;
 }
 .menu .pizza__components p {
@@ -595,18 +595,17 @@ a {
   color: #e9c19c;
 }
 .menu .pizza__prices {
-  width: 25%;
   height: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .menu .pizza__prices p {
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 2rem;
   color: #ddd;
 }
 .menu .pizza__btn {
-  padding: 1.5rem 3rem;
+  padding: 0.5rem 1rem;
   border: 1px solid black;
   background-color: #724e2b;
   height: 6rem;
@@ -624,6 +623,72 @@ a {
 }
 .menu .not-visible {
   display: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(236, 237, 238);
+}
+.contact__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(236, 237, 238);
+  font-family: "Caveat", cursive;
+  font-size: 6rem;
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.contact__map {
+  margin: 5rem;
+  width: 100%;
+  height: 80vh;
+}
+.contact__info {
+  margin-left: 0;
+  margin: 5rem;
+  width: 100%;
+}
+.contact__info-el {
+  margin: 5rem 0;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bfa182;
+  border-radius: 5rem;
+  font-size: 2rem;
+}
+.contact__info-el p {
+  color: rgb(236, 237, 238);
+}
+.contact__info-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__info-social a {
+  font-size: 5rem;
+  color: rgb(236, 237, 238);
+  transition: color 0.1s;
+}
+.contact__info-social a:hover {
+  color: #ffcc80;
 }
 
 @media (min-width: 768px) {
@@ -831,6 +896,34 @@ a {
   }
   .members__member {
     width: 100%;
+  }
+  .menu {
+    width: 90%;
+  }
+  .menu__list a {
+    font-size: 3.2rem;
+  }
+  .menu .pizza__prices {
+    display: none;
+  }
+  .menu .pizza__btn {
+    padding: 0.5rem 1rem;
+    height: 5.5rem;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__map {
+    margin-top: 2.5rem;
+    width: 80%;
+    height: 80vh;
+  }
+  .contact__info {
+    margin: 0rem;
+    width: 80%;
   }
 }
 @media (max-width: 550px) {

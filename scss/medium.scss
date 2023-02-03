@@ -192,7 +192,6 @@
 
 
   .info {
-    // width: 50%;
     width: 90%;
 
     &__short {
@@ -207,6 +206,51 @@
       width: 100%;
     }
   }
+
+  .menu {
+    width: 90%;
+
+    &__list {
+      a {
+        font-size: 3.2rem;
+      }
+    }
+
+    .pizza {
+      &__prices {
+        display: none;
+      }
+
+      &__btn {
+        padding: 0.5rem 1rem;
+        height: 5.5rem;
+      }
+
+    }
+  }
+
+  .contact {
+    width: 90%;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__map {
+      margin-top: 2.5rem;
+      width: 80%;
+      height: 80vh;
+    }
+
+    &__info {
+      // margin-left: 0;
+      margin: 0rem;
+      width: 80%;
+    }
+
+
+  }
+
 
 
 }
