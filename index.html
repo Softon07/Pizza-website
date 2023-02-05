@@ -682,50 +682,32 @@
                                 class="fa-brands fa-youtube-square"></i></a>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
-        <!-- <section class="contact-form-section wrapper">
-            <div class="contact-form-container">
-                <div class="contact-form-text">
-                    <h1>SKONTAKTUJ SIĘ Z ZESPOŁEM CUSTOMER CARE</h1>
-                    <p>
-                        Jeśli masz pytanie lub sugestię dotyczącą marki Pizzeriada,
-                        skontaktuj się z nami używając poniższego formularza.
-                    </p>
-                </div>
+        <section class="form wrapper">
+            <div class="form__container">
+                <h2 class="form__heading">SKONTAKTUJ SIĘ Z NAMI</h2>
+                <p class="form__text">
+                    Jeśli masz pytanie lub sugestię dotyczącą marki Pizzeriada,
+                    skontaktuj się z nami używając poniższego formularza.
                 <form action="kontakt.php" method="post">
-                    <div class="input-area-container">
-                        <div class="input-data-container">
+                    <div class="form__inputs-textarea-container">
+                        <div class="form__inputs">
                             <div class="row">
                                 <label for="user-name">IMIĘ<span> *</span></label>
-                                <input
-                                    type="text"
-                                    id="user-name"
-                                    placeholder="np. Jan"
-                                    required
-                                />
+                                <input type="text" id="user-name" placeholder="np. Jan" required />
                             </div>
                             <div class="row">
                                 <label for="surname">NAZWISKO<span> *</span></label>
-                                <input
-                                    type="text"
-                                    id="surname"
-                                    placeholder="np. Kowalski"
-                                    required
-                                />
+                                <input type="text" id="surname" placeholder="np. Kowalski" required />
                             </div>
                             <div class="row">
-                                <label for="kind-of-order"
-                                    >PROSIMY O WYBRANIE SPOSOBU DOKONANIA ZAMÓWIENIA<span>
-                                        *</span
-                                    ></label
-                                >
+                                <label for="kind-of-order">PROSIMY O WYBRANIE SPOSOBU DOKONANIA
+                                    ZAMÓWIENIA<span>*</span></label>
                                 <select id="kind-of-order" name="kind-of-order">
-                                    <option value="" disabled selected hidden>
-                                        Rodzaj zamówienia
-                                    </option>
+                                    <option value="" disabled selected hidden>Rodzaj zamówienia</option>
                                     <option value="1">W restauracji</option>
                                     <option value="2">Dostawa</option>
                                     <option value="3">Na wynos</option>
@@ -733,26 +715,18 @@
                                 </select>
                             </div>
                             <div class="row">
-                                <label for="kind-of-order"
-                                    >PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
-                                    TWOJA WIADOMOŚĆ<span> *</span></label
-                                >
+                                <label for="kind-of-order">PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
+                                    TWOJA WIADOMOŚĆ<span> *</span></label>
                                 <select id="kind-of-order" name="kind-of-order">
-                                    <option value="" disabled selected hidden>
-                                        Nazwa restauracji
-                                    </option>
+                                    <option value="" disabled selected hidden> Nazwa restauracji </option>
                                     <option value="DG">Dąbrowa Górnicza</option>
                                     <option value="SS">Sosnowiec</option>
                                 </select>
                             </div>
                             <div class="row">
-                                <label for="message-topic"
-                                    >PROSIMY O WYBRANIE TEMATU WIADOMOŚCI<span> *</span></label
-                                >
+                                <label for="message-topic">PROSIMY O WYBRANIE TEMATU WIADOMOŚCI<span> *</span></label>
                                 <select id="kind-of-order" name="kind-of-order">
-                                    <option value="" disabled selected hidden>
-                                        Temat wiadomości
-                                    </option>
+                                    <option value="" disabled selected hidden> Temat wiadomości </option>
                                     <option value="OP">Opinia pozytywna</option>
                                     <option value="ON">Opinia negatywna</option>
                                     <option value="P">Pytanie</option>
@@ -760,38 +734,24 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="message-container">
+                        <div class="form__textarea">
                             <label for="text">TWOJA WIADOMOŚĆ<span> *</span></label>
-                            <textarea
-                                name="textarea"
-                                value="text"
-                                id="text"
-                                cols="10"
-                                rows="30"
-                                required
-                            ></textarea>
+                            <textarea name="textarea" value="text" id="text" cols="10" rows="30" required></textarea>
                         </div>
                     </div>
-                    
-                    <div class="attachment-container">
+                    <div class="form__attachment">
                         <p>Dodaj załącznik zdjęcie/wideo</p>
                         <label for="myfile">
                             <div>
                                 <p>Wybierz plik (max 1 MB)</p>
-                                <input
-                                    type="file"
-                                    id="myfile"
-                                    class="myfile"
-                                    name="myfile"
-                                    accept="image/png, image/jpg, image/gif, image/jpeg"
-                                />
+                                <input type="file" id="myfile" class="myfile" name="myfile"
+                                    accept="image/png, image/jpg, image/gif, image/jpeg" />
                             </div>
                         </label>
                     </div>
-                    
-                    <div class="kind-of-contact-container">
+                    <div class="form__contact">
                         <p class="p-above">Jak możemy się z Tobą skontaktować?</p>
-                        <div class="checkbox-container">
+                        <div class="form__contact-checkbox">
                             <div>
                                 <label for="phone">
                                     <input type="checkbox" id="phone" />Telefonicznie
@@ -809,10 +769,10 @@
                             </div>
                         </div>
                         <p class="p-below">Prosimy o wybranie formy kontaktu</p>
-                        <div class="button-container">
+                        <div class="form__btn">
                             <button type="submit" class="form-btn">Wyślij</button>
                         </div>
-                        <div class="kind-of-contact-text">
+                        <div class="form__last-text">
                             <div>
                                 <i class="fa-solid fa-lock"></i>
                             </div>
@@ -836,7 +796,7 @@
                     </div>
                 </form>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- <footer class="footer">
@@ -858,6 +818,7 @@
     <script src="./js/slider.js"></script>
     <script src="./js/opinion.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/contactForm.js"></script>
 </body>
 
 </html>

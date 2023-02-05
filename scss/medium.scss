@@ -168,11 +168,11 @@
       background: rgba(0, 0, 0, 0.3);
     }
 
-  }
-
-  .form {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.4);
+    .form {
+      margin: 0;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 0;
+    }
 
   }
 
@@ -246,6 +246,36 @@
       // margin-left: 0;
       margin: 0rem;
       width: 80%;
+    }
+  }
+
+  .form {
+    // flex-direction: column;
+    &__container {
+      max-width: 39rem;
+    }
+      
+    &__inputs-textarea-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+    }
+
+    &__inputs {
+      padding: 0rem;
+    }
+  
+    &__textarea {
+      padding: 0rem;
+    }
+
+    .row {
+      margin-bottom: 2.5rem;
+
+      label {
+        margin-bottom: 0.5rem;
+      }
     }
 
 

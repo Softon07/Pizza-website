@@ -323,95 +323,95 @@ a {
     font-size: 4rem;
     color: white;
   }
-}
 
-.form {
-  min-width: 35rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 2rem 15rem 5rem 15rem;
-  width: auto;
-  height: auto;
-  border: 1px solid $border-color;
-  border-radius: 2.5rem;
-
-  .fa-star {
-    cursor: pointer;
-  }
-
-  .highlight {
-    color: #facd19;
-  }
-
-  &__input-container {
+  .form {
+    min-width: 35rem;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-
-    input,
-    textarea {
-      width: 100%;
-      height: 5rem;
-      padding: 1rem;
-      font-size: 2rem;
-      border-radius: 1.5rem;
-    }
-
-
-    label {
-      font-size: 2.3rem;
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-  }
-
-  &__stars {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    i {
-      font-size: 3rem;
-    }
-  }
-
-  &__opinion {
-    textarea {
-      height: 16rem;
-      resize: none;
-    }
-  }
-
-  &__btn {
-    position: relative;
-    width: 18rem;
-    height: 6rem;
-    padding: 2rem 4rem;
-    margin-left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
-    border: 1px solid black;
-    background-color: $brown;
-    color: $white;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 1rem;
-    transition: color 0.3s, background-color 0.3s;
-    cursor: pointer;
-  }
+    padding: 1rem;
+    margin: 2rem 15rem 5rem 15rem;
+    width: auto;
+    height: auto;
+    border: 1px solid $border-color;
+    border-radius: 2.5rem;
 
-  &__btn:hover {
-    color: #724e2b;
-    background-color: #ddd;
-  }
+    .fa-star {
+      cursor: pointer;
+    }
 
+    .highlight {
+      color: #facd19;
+    }
+
+    &__input-container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+      width: 100%;
+
+      input,
+      textarea {
+        width: 100%;
+        height: 5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+      }
+
+
+      label {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+    }
+
+    &__stars {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      i {
+        font-size: 3rem;
+      }
+    }
+
+    &__opinion {
+      textarea {
+        height: 16rem;
+        resize: none;
+      }
+    }
+
+    &__btn {
+      position: relative;
+      width: 18rem;
+      height: 6rem;
+      padding: 2rem 4rem;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      border: 1px solid black;
+      background-color: $brown;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 1rem;
+      transition: color 0.3s, background-color 0.3s;
+      cursor: pointer;
+    }
+
+    &__btn:hover {
+      color: #724e2b;
+      background-color: #ddd;
+    }
+
+  }
 }
 
 .about {
@@ -725,6 +725,8 @@ a {
 }
 
 .contact {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -774,6 +776,7 @@ a {
       border: 1px solid $border-color;
       border-radius: 5rem;
       font-size: 2rem;
+
       p {
         color: $white;
       }
@@ -784,179 +787,214 @@ a {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+
       a {
         font-size: 5rem;
         color: $white;
         transition: color 0.1s;
       }
-      a:hover{
+
+      a:hover {
         color: $creamy;
       }
     }
   }
 }
 
+.form {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
 
-// // section 2 -> contact-form-section
-// .contact-form-section {
-//   margin-top: 3%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: #ddd;
+  &__container {
+    // width: 70%;
+    // width: 740px;
+    max-width: 70rem;
+    padding: 2em;
+    border: 1px solid $white;
+    background: rgba(0, 0, 0, 0.4);
+  }
 
-//   .contact-form-container {
-//     width: 70%;
-//     height: 1290px;
-//     padding: 2em;
-//     margin-bottom: 3%;
-//     border: 1px solid #ddd;
-//     background: rgba(0, 0, 0, 0.25);
+  &__heading {
+    font-size: 2.4rem;
+  }
 
-//     .contact-form-text {
-//       h1 {
-//         font-size: 24px;
-//       }
+  &__text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.7rem;
+  }
 
-//       p {
-//         padding-top: 3%;
-//         padding-bottom: 3%;
-//         font-size: 17px;
-//       }
-//     }
+  &__inputs-textarea-container {
+    width: 100%;
+    display: flex;
+    padding-bottom: 2rem;
+  }
 
-//     .input-area-container {
-//       display: flex;
-//       width: 100%;
-//       display: flex;
-//       padding-bottom: 5%;
+  &__inputs {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-//       .input-data-container {
-//         width: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//         align-items: flex-start;
-//       }
-//     }
+  &__textarea {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-//     .message-container {
-//       display: flex;
-//       flex-direction: column;
-//       margin-left: 1%;
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
+  &__attachment {
+    width: 100%;
+    height: 100%;
+    margin: 5% 0;
 
-//   .attachment-container {
-//     width: 30%;
-//     height: 100%;
-//     margin: 5% 0;
+    // border: 1px solid lime;
+    p {
+      padding-bottom: 1rem;
+      font-size: 1.8rem;
+    }
 
-//     // border: 1px solid lime;
-//     p {
-//       width: 120%;
-//       margin-bottom: 1.5%;
-//       font-size: 18px;
-//     }
+    div {
+      font-weight: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 230px;
+      height: 50px;
+      border: 1px solid #ddd;
+      border-radius: 2rem;
+      color: $special-cream;
+      transition: background 0.1s, color 0.1s;
+      cursor: pointer;
 
-//     div {
-//       font-weight: normal;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       width: 230px;
-//       height: 50px;
-//       border: 1px solid #ddd;
-//       border-radius: 10%;
-//       color: #f1bd52;
-//       transition: background 300ms, color 300ms;
-//       cursor: pointer;
+      p {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      }
 
-//       p {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         font-size: 15px;
-//       }
+      input {
+        display: none;
+      }
+    }
 
-//       input {
-//         display: none;
-//       }
-//     }
+    div:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
 
-//     div:hover {
-//       background: rgba(0, 0, 0, 0.4);
-//     }
-//   }
+  &__contact {
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
 
-//   .kind-of-contact-container {
-//     width: 100%;
-//     height: auto;
-//     padding-top: 4%;
+    .p-above {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
 
-//     .p-above {
-//       font-size: 20px;
-//       padding-bottom: 10px;
-//     }
+    .p-below {
+      padding-top: 10px;
+      font-size: 14px;
+      color: rgb(245, 119, 119);
+    }
 
-//     .p-below {
-//       padding-top: 10px;
-//       font-size: 14px;
-//       color: rgb(245, 119, 119);
-//     }
+    &-checkbox {
+      div {
+        display: flex;
 
-//     .checkbox-container {
-//       div {
-//         display: flex;
+        label {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
 
-//         label {
-//           display: flex;
-//           align-items: center;
-//           cursor: pointer;
+          input {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            display: flex;
+            cursor: pointer;
+          }
 
-//           input {
-//             width: 20px;
-//             height: 20px;
-//             margin: 5px;
-//             display: flex;
-//             cursor: pointer;
-//           }
-//         }
-//       }
-//     }
+        }
 
-//     .button-container {
-//       padding-top: 20px;
-//       width: 100%;
-//       height: 100%;
-//       display: flex;
-//       justify-content: flex-end;
+      }
 
-//       .form-btn {
-//         width: 350px;
-//         height: 45px;
-//         // border-radius: 5%;
-//         cursor: pointer;
-//       }
-//     }
+    }
 
-//     .kind-of-contact-text {
-//       display: flex;
-//       margin-top: 35px;
+  }
 
-//       div {
-//         padding-right: 20px;
 
-//         i {
-//           font-size: 30px;
-//           color: white;
-//         }
-//       }
-//     }
-//   }
-// }
+
+  &__btn {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .form-btn {
+      width: 350px;
+      height: 45px;
+      cursor: pointer;
+    }
+  }
+
+  &__last-text {
+    display: flex;
+    margin-top: 35px;
+
+    div {
+      padding-right: 20px;
+
+      i {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+input:placeholder-shown {
+  font-style: italic; // makes placeholder italics in input
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    font-size: 12px;
+    min-width: 30rem;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  input,
+  select {
+    width: 100%;
+    min-width: 30rem;
+    height: 45px;
+  }
+}
+
+textarea {
+  resize: none;
+}
 
 // .footer {
 //   position: static;
