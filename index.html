@@ -16,7 +16,6 @@
 </head>
 
 <body class="bcg-img">
-    <!-- main -->
     <main class="main">
         <nav class="nav-mobile">
             <div class="nav-mobile__item">
@@ -104,7 +103,7 @@
                         <p>Przepyszna pizza i przemiły uśmiechnęty kurier! :)</p>
                     </div>
                     <div class="opinion__line"></div>
-                    <div class="opinion__opinion__testimonials-author">
+                    <div class="opinion__testimonials-author">
                         <p>Tomek, 02 czerwca 2021</p>
                     </div>
                     <div class="opinion__annotation">
@@ -661,12 +660,12 @@
 
                 <div class="contact__info">
                     <div class="contact__info-el">
-                        <p> Wolna 31a 10-200 Dąbrowa Górnicza </p>
-                        <p> Czujna 17 20-100 Sosnowiec </p>
+                        <p> Wolna 31a, 10-200 Dąbrowa Górnicza </p>
+                        <p> Czujna 17, 20-100 Sosnowiec </p>
 
                     </div>
                     <div class="contact__info-el">
-                        <p>pizzeriada@gmail.com</p>
+                        <p>pizzeriada@email.com</p>
                     </div>
                     <div class="contact__info-el">
                         <p>DĄBROWA GÓRNICZA: 111 222 333</p>
@@ -688,7 +687,7 @@
 
         <section class="form wrapper">
             <div class="form__container">
-                <h2 class="form__heading">SKONTAKTUJ SIĘ Z NAMI</h2>
+                <h2 class="form__heading">Napisz do nas</h2>
                 <p class="form__text">
                     Jeśli masz pytanie lub sugestię dotyczącą marki Pizzeriada,
                     skontaktuj się z nami używając poniższego formularza.
@@ -705,7 +704,7 @@
                             </div>
                             <div class="row">
                                 <label for="kind-of-order">PROSIMY O WYBRANIE SPOSOBU DOKONANIA
-                                    ZAMÓWIENIA<span>*</span></label>
+                                    ZAMÓWIENIA<span> *</span></label>
                                 <select id="kind-of-order" name="kind-of-order">
                                     <option value="" disabled selected hidden>Rodzaj zamówienia</option>
                                     <option value="1">W restauracji</option>
@@ -716,7 +715,7 @@
                             </div>
                             <div class="row">
                                 <label for="kind-of-order">PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
-                                    TWOJA WIADOMOŚĆ<span> *</span></label>
+                                    TWOJA WIADOMOŚĆ<span>*</span></label>
                                 <select id="kind-of-order" name="kind-of-order">
                                     <option value="" disabled selected hidden> Nazwa restauracji </option>
                                     <option value="DG">Dąbrowa Górnicza</option>
@@ -770,7 +769,7 @@
                         </div>
                         <p class="p-below">Prosimy o wybranie formy kontaktu</p>
                         <div class="form__btn">
-                            <button type="submit" class="form-btn">Wyślij</button>
+                            <button type="submit" class="form__btn-inside">Wyślij</button>
                         </div>
                         <div class="form__last-text">
                             <div>
@@ -799,20 +798,37 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
-        <div class="footer__item wrapper">
-            <div class="logo">
-                <a href="#home">Pizzeriada</p></a>
+    <footer class="footer">
+        <div class="footer__main wrapper">
+            <a href="#home" class="footer__element footer__logo">Pizzeriada</a>
+            <div class="footer__element footer__contact">
+                <p>Wolna 31a, 10-200 Dąbrowa Górnicza</p>
+                <p>Telefon: 111 222 333</p>
+
+                <p>Czujna 17, 20-100 Sosnowiec</p>
+                <p>Telefon: 333 222 111</p>
             </div>
-            <div class="footer__anchors">
-                <a href="#home" class="nav__item">strona główna</a>
-                <a href="#opinion" class="nav__item">Opinie</a>
-                <a href="#about" class="nav__item">o nas</a>
-                <a href="#menu" class="nav__item">Menu</a>
-                <a href="#contact" class="nav__item">Kontakt</a>
-            </div>    
+            <div class="footer__element footer__social">
+                <p>Obserwuj nas w social media:</p>
+                <div class="footer__a-container">
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+                </div>
+
+            </div>
+            <div class="footer__element footer__payment">
+                <p>Nasze formy płatności: <br>Gotówka, karta lub szybki przelew:</p>
+                <button class="footer__btn">Zamów online</button>
+            </div>
         </div>
-    </footer> -->
+
+        <div class="footer__small wrapper">
+            <p href="#home">© Pizzeriada 2023</p>
+        </div>
+
+    </footer>
 
     <script src="./js/mobileNav.js"></script>
     <script src="./js/slider.js"></script>

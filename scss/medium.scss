@@ -16,9 +16,6 @@
     &__item {
       display: flex;
       justify-content: space-between;
-      // align-items: center;
-      // margin: 0.4em 2em;
-      // padding: 0.2em 1em;
       font-size: 1.8rem;
       z-index: 1001;
     }
@@ -250,11 +247,12 @@
   }
 
   .form {
+
     // flex-direction: column;
     &__container {
       max-width: 39rem;
     }
-      
+
     &__inputs-textarea-container {
       width: 100%;
       display: flex;
@@ -265,7 +263,7 @@
     &__inputs {
       padding: 0rem;
     }
-  
+
     &__textarea {
       padding: 0rem;
     }
@@ -277,8 +275,15 @@
         margin-bottom: 0.5rem;
       }
     }
+  }
 
+  .footer {
+    height: auto;
 
+    &__main {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 
 
