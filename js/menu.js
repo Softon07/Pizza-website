@@ -1,7 +1,6 @@
 const sections = {
     Pizza: '.pizza',
     Sosy: '.sauce',
-    'Pizza Promocyjna': '.promotion',
     Napoje: '.drinks'
 };
 

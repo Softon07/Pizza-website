@@ -86,7 +86,7 @@ a {
   background: rgba(0, 0, 0, 0.2);
 }
 .header__text-container {
-  margin-left: 20rem;
+  margin-left: 12.5rem;
   margin-top: 14rem;
   display: flex;
   flex-direction: column;
@@ -556,12 +556,12 @@ a {
 .menu__list a:hover {
   color: #f1bd52;
 }
-.menu .pizza {
+.menu .element {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.menu .pizza__list {
+.menu .element__list {
   margin: 2rem;
   border-bottom: 1px solid #bfa182;
   border-radius: 2rem;
@@ -570,10 +570,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.menu .pizza__list:last-child {
+.menu .element__list:last-child {
   margin-bottom: 5rem;
 }
-.menu .pizza__name {
+.menu .element__name {
   width: 50rem;
   height: auto;
   display: flex;
@@ -581,42 +581,47 @@ a {
   justify-content: center;
   align-items: flex-start;
 }
-.menu .pizza__name p {
+.menu .element__name p {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #ddd;
 }
-.menu .pizza__components p {
+.menu .element__components p {
   width: 100%;
   padding-top: 10px;
   font-size: 18px;
   font-weight: normal;
   color: #e9c19c;
 }
-.menu .pizza__prices {
+.menu .element__prices {
   height: auto;
   display: flex;
   align-items: center;
 }
-.menu .pizza__prices p {
+.menu .element__prices p {
   padding: 1rem;
   font-size: 2rem;
   color: #ddd;
 }
-.menu .pizza__btn {
+.menu .element__btn {
+  min-width: 17.7rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem 1rem;
   border: 1px solid black;
   background-color: #724e2b;
-  height: 6rem;
   color: rgb(236, 237, 238);
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 1rem;
+  font-size: 1.4rem;
   transition: color 0.1s, background-color 0.1s;
   cursor: pointer;
-  font-size: 1.4rem;
 }
-.menu .pizza__btn:hover {
+.menu .element__btn:hover {
   color: #724e2b;
   background-color: #ddd;
 }
@@ -897,6 +902,7 @@ textarea {
 .footer {
   width: 100%;
   height: 45rem;
+  border: 1px solid rgb(236, 237, 238);
   background-color: #b89b7e;
 }
 .footer__main {
@@ -1108,8 +1114,8 @@ textarea {
     border: 0.4px solid white;
   }
   .header__text-container {
-    width: 38rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.6);
     border: 0.4px solid white;
@@ -1127,7 +1133,10 @@ textarea {
   }
   .header__link {
     margin: 2rem 0;
-    margin-left: 2rem;
+    margin-left: 1rem;
+  }
+  .header__link:nth-child(2) {
+    margin-right: 5rem;
   }
   .slider {
     width: 90%;
@@ -1195,10 +1204,10 @@ textarea {
   .menu__list a {
     font-size: 3.2rem;
   }
-  .menu .pizza__prices {
+  .menu .element__prices {
     display: none;
   }
-  .menu .pizza__btn {
+  .menu .element__btn {
     padding: 0.5rem 1rem;
     height: 5.5rem;
   }
@@ -1249,5 +1258,19 @@ textarea {
 @media (max-width: 550px) {
   .slider__slides img {
     width: 100%;
+  }
+  .header__text-container {
+    min-width: 30rem;
+  }
+  .menu {
+    min-width: 100vw;
+  }
+  .menu__btn {
+    min-width: 17.7rem;
+    min-height: 5rem;
+    max-height: 5rem;
+    min-width: none;
+    min-height: none;
+    max-height: none;
   }
 }/*# sourceMappingURL=main.css.map */

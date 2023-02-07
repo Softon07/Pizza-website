@@ -75,8 +75,8 @@
     border: 0.4px solid white;
   }
   .header__text-container {
-    width: 38rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.6);
     border: 0.4px solid white;
@@ -94,7 +94,10 @@
   }
   .header__link {
     margin: 2rem 0;
-    margin-left: 2rem;
+    margin-left: 1rem;
+  }
+  .header__link:nth-child(2) {
+    margin-right: 5rem;
   }
   .slider {
     width: 90%;
@@ -162,10 +165,10 @@
   .menu__list a {
     font-size: 3.2rem;
   }
-  .menu .pizza__prices {
+  .menu .element__prices {
     display: none;
   }
-  .menu .pizza__btn {
+  .menu .element__btn {
     padding: 0.5rem 1rem;
     height: 5.5rem;
   }

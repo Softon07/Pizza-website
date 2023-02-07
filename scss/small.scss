@@ -8,8 +8,25 @@
         }
     }
 
-    .menu {
-
+    .header {
+        &__text-container {
+            min-width: 30rem;
+        }
     }
+    
+    .menu {
+        min-width: 100vw;
+
+        &__btn {
+            min-width: 17.7rem;
+            min-height: 5rem;
+            max-height: 5rem;
+
+            min-width: none;
+            min-height: none;
+            max-height: none;
+          }
+    }
+
 
 }
