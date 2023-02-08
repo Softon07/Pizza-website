@@ -698,6 +698,7 @@ a {
 }
 
 .form {
+  position: relative;
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
@@ -748,6 +749,102 @@ a {
 .form__textarea span {
   color: #f1bd52;
 }
+.form .popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #866545;
+  width: 60rem;
+  height: 20rem;
+  border: 0.8rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  transition: top 0.5s;
+}
+.form .popup p {
+  font-size: 2.5rem;
+}
+.form .popup button {
+  margin-top: 5rem;
+  min-width: 17.7rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  background-color: #724e2b;
+  color: rgb(236, 237, 238);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  transition: color 0.1s, background-color 0.1s;
+  cursor: pointer;
+}
+.form .popup button:hover {
+  color: #724e2b;
+  background-color: #ddd;
+}
+.form .show-popup {
+  top: 250px;
+}
+.form .form__textarea.row {
+  align-items: stretch;
+}
+.form .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form .row span {
+  font-size: 1.5rem;
+  color: #f1bd52;
+}
+.form .row label {
+  font-size: 1.2rem;
+  min-width: 30rem;
+  width: 100%;
+  font-weight: bold;
+}
+.form .row input,
+.form .row select {
+  padding: 1rem;
+  width: 100%;
+  min-width: 30rem;
+  height: 45px;
+  border-radius: 0.5rem;
+}
+.form textarea {
+  padding: 1rem;
+  resize: none;
+  border-radius: 0.5rem;
+}
+.form .row.error input,
+.form .row.error select,
+.form .form__textarea.error textarea {
+  border: 1px solid rgb(241, 189, 82);
+  background-color: rgba(241, 189, 82, 0.06);
+}
+.form .row .error-text,
+.form .form__textarea .error-text {
+  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: rgb(245, 119, 119);
+  visibility: hidden;
+}
+.form .row.error .error-text,
+.form .form__textarea.error .error-text {
+  visibility: visible;
+}
 .form__attachment {
   width: 100%;
   height: 100%;
@@ -793,8 +890,8 @@ a {
   padding-bottom: 10px;
 }
 .form__contact .p-below {
-  padding-top: 10px;
-  font-size: 14px;
+  padding-top: 1rem;
+  font-size: 1.4rem;
   color: rgb(245, 119, 119);
 }
 .form__contact-checkbox div {
@@ -868,35 +965,6 @@ input:placeholder-shown {
   font-style: italic;
   font-size: 1.6rem;
   padding-left: 1rem;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.row span {
-  font-size: 1.5rem;
-  color: #f1bd52;
-}
-.row label {
-  font-size: 1.2rem;
-  min-width: 30rem;
-  width: 100%;
-  font-weight: bold;
-}
-.row input,
-.row select {
-  padding: 1rem;
-  width: 100%;
-  min-width: 30rem;
-  height: 45px;
-}
-
-textarea {
-  padding: 1rem;
-  resize: none;
 }
 
 .footer {

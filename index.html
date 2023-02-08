@@ -630,7 +630,7 @@
                 <div class="sauce__list element__list">
                     <div class="sauce__name element__name">
                         <p>
-                            Sos pomidorowy łagodny 
+                            Sos pomidorowy łagodny
                         </p>
                     </div>
                     <div class="sauce__prices element__prices">
@@ -642,7 +642,7 @@
                 <div class="sauce__list element__list">
                     <div class="sauce__name element__name">
                         <p>
-                            Sos pomidorowy ostry 
+                            Sos pomidorowy ostry
                         </p>
                     </div>
                     <div class="sauce__prices element__prices">
@@ -654,7 +654,7 @@
                 <div class="sauce__list element__list">
                     <div class="sauce__name element__name">
                         <p>
-                            Sos meksykański 
+                            Sos meksykański
                         </p>
                     </div>
                     <div class="sauce__prices element__prices">
@@ -666,7 +666,7 @@
                 <div class="sauce__list element__list">
                     <div class="sauce__name element__name">
                         <p>
-                            Sos koperkowy 
+                            Sos koperkowy
                         </p>
                     </div>
                     <div class="sauce__prices element__prices">
@@ -728,7 +728,7 @@
                 <div class="drinks__list element__list">
                     <div class="drinks__name element__name">
                         <p>
-                            Fanta 
+                            Fanta
                         </p>
                     </div>
                     <div class="drinks__prices element__prices">
@@ -740,7 +740,7 @@
                 <div class="drinks__list element__list">
                     <div class="drinks__name element__name">
                         <p>
-                            Woda gazowana 
+                            Woda gazowana
                         </p>
                     </div>
                     <div class="drinks__prices element__prices">
@@ -752,7 +752,7 @@
                 <div class="drinks__list element__list">
                     <div class="drinks__name element__name">
                         <p>
-                            Woda niegazowana 
+                            Woda niegazowana
                         </p>
                     </div>
                     <div class="drinks__prices element__prices">
@@ -820,59 +820,67 @@
                 <p class="form__text">
                     Jeśli masz pytanie lub sugestię dotyczącą marki Pizzeriada,
                     skontaktuj się z nami używając poniższego formularza.
-                <form action="kontakt.php" method="post">
+                <form autocomplete="off">
                     <div class="form__inputs-textarea-container">
                         <div class="form__inputs">
+
                             <div class="row">
                                 <label for="user-name">IMIĘ<span> *</span></label>
-                                <input type="text" id="user-name" placeholder="np. Jan" required />
+                                <input type="text" id="username" placeholder="np. Jan" required />
+                                <p class="error-text">Podaj imię</p>
                             </div>
+
                             <div class="row">
                                 <label for="surname">NAZWISKO<span> *</span></label>
                                 <input type="text" id="surname" placeholder="np. Kowalski" required />
+                                <p class="error-text">Podaj nazwisko</p>
                             </div>
                             <div class="row">
-                                <label for="kind-of-order">PROSIMY O WYBRANIE SPOSOBU DOKONANIA
-                                    ZAMÓWIENIA<span> *</span></label>
-                                <select id="kind-of-order" name="kind-of-order">
+                                <label>PROSIMY O WYBRANIE SPOSOBU DOKONANIA
+                                    ZAMÓWIENIA</label>
+                                <select id="select1">
                                     <option value="" disabled selected hidden>Rodzaj zamówienia</option>
                                     <option value="1">W restauracji</option>
                                     <option value="2">Dostawa</option>
                                     <option value="3">Na wynos</option>
                                     <option value="4">Nie dotyczy</option>
                                 </select>
+                                <p class="error-text">Wybierz jedną z opcji</p>
                             </div>
                             <div class="row">
                                 <label for="kind-of-order">PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
                                     TWOJA WIADOMOŚĆ<span>*</span></label>
-                                <select id="kind-of-order" name="kind-of-order">
+                                <select id="select2">
                                     <option value="" disabled selected hidden> Nazwa restauracji </option>
                                     <option value="DG">Dąbrowa Górnicza</option>
                                     <option value="SS">Sosnowiec</option>
                                 </select>
+                                <p class="error-text">Wybierz jedną z opcji</p>
                             </div>
                             <div class="row">
                                 <label for="message-topic">PROSIMY O WYBRANIE TEMATU WIADOMOŚCI<span> *</span></label>
-                                <select id="kind-of-order" name="kind-of-order">
+                                <select id="select3">
                                     <option value="" disabled selected hidden> Temat wiadomości </option>
                                     <option value="OP">Opinia pozytywna</option>
                                     <option value="ON">Opinia negatywna</option>
                                     <option value="P">Pytanie</option>
                                     <option value="S">Sugestia</option>
                                 </select>
+                                <p class="error-text">Wybierz jedną z opcji</p>
                             </div>
                         </div>
-                        <div class="form__textarea">
+                        <div class="form__textarea row">
                             <label for="text">TWOJA WIADOMOŚĆ<span> *</span></label>
-                            <textarea name="textarea" value="text" id="text" cols="10" rows="30" required></textarea>
+                            <textarea value="text" id="text" cols="10" rows="30" required></textarea>
+                            <p class="error-text">Podaj treść wiadomości</p>
                         </div>
                     </div>
                     <div class="form__attachment">
                         <p>Dodaj załącznik zdjęcie/wideo</p>
-                        <label for="myfile">
+                        <label>
                             <div>
                                 <p>Wybierz plik (max 1 MB)</p>
-                                <input type="file" id="myfile" class="myfile" name="myfile"
+                                <input type="file" class="myfile"
                                     accept="image/png, image/jpg, image/gif, image/jpeg" />
                             </div>
                         </label>
@@ -911,18 +919,17 @@
                                     dane osobowe będą przetwarzane w celu obsługi Twojego
                                     zgłoszenia złożonego poprzez formularz kontaktowy W
                                     przypadku, w którym Twoje zgłoszenie dotyczy restauracji
-                                    franczyzowej AmRest, oddzielnym administratorem Twoich
-                                    danych osobowych będzie ta restauracja. Więcej informacji na
-                                    temat przetwarzania Twoich danych w tym zakresie znajduje
-                                    się w naszej Polityce prywatności w sekcji „Franczyza”.
-                                    Więcej informacji na temat przetwarzania danych osobowych, w
-                                    tym o przysługujących Ci prawach, znajduje się w naszej
-                                    Polityce Prywatności.
+                                    lorem ipsum, oddzielnym administratorem Twoich
+                                    danych osobowych będzie ta restauracja.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </form>
+                <div class="popup">
+                    <p>Formularz został poprawnie wysłany!</p>
+                    <button id="closeBtn">Zamknij</button>
+                </div>
             </div>
         </section>
     </main>
@@ -942,7 +949,8 @@
                 <div class="footer__a-container">
                     <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                            class="fa-brands fa-instagram-square"></i></a>
                     <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
                 </div>
 

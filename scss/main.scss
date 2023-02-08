@@ -1,11 +1,13 @@
 // @import "./colors";
 $brown: #724e2b;
+$popup: #866545;
 $white: rgb(236, 237, 238);
 $cocoa: #BFA182;
 $skin: #e9c19c;
 $creamy: #ffcc80;
 $special-cream: #f1bd52;
 $border-color: #bfa182;
+$error: rgb(245, 119, 119);
 
 *,
 *::before,
@@ -805,6 +807,7 @@ a {
 }
 
 .form {
+  position: relative;
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
@@ -813,8 +816,6 @@ a {
   color: $white;
 
   &__container {
-    // width: 70%;
-    // width: 740px;
     max-width: 70rem;
     padding: 2em;
     border: 1px solid $white;
@@ -859,9 +860,120 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
+
     span {
       color: $special-cream;
     }
+  }
+
+  .popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $popup;
+    width: 60rem;
+    height: 20rem;
+    border: 0.8rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transition: top 0.5s;
+
+    p {
+      font-size: 2.5rem;
+    }
+
+    button {
+      margin-top: 5rem;
+      min-width: 17.7rem;
+      min-height: 5rem;
+      max-height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border: 1px solid black;
+      background-color: $brown;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+      transition: color 0.1s, background-color 0.1s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: #724e2b;
+      background-color: #ddd;
+    }
+  }
+
+  .show-popup {
+    top: 250px;
+  }
+
+  .form__textarea.row {
+    align-items: stretch;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+      font-size: 1.5rem;
+      color: $special-cream;
+    }
+
+    label {
+      font-size: 1.2rem;
+      min-width: 30rem;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      padding: 1rem;
+      width: 100%;
+      min-width: 30rem;
+      height: 45px;
+      border-radius: 0.5rem;
+    }
+  }
+
+  textarea {
+    padding: 1rem;
+    resize: none;
+    border-radius: 0.5rem;
+  }
+
+  .row.error input,
+  .row.error select,
+  .form__textarea.error textarea {
+    border: 1px solid rgb(241, 189, 82);
+    background-color: rgba(241, 189, 82, 0.060);
+  }
+
+  .row .error-text,
+  .form__textarea .error-text {
+    margin-top: 0.3rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: $error;
+    visibility: hidden;
+  }
+
+  .row.error .error-text,
+  .form__textarea.error .error-text {
+    visibility: visible;
   }
 
   &__attachment {
@@ -869,7 +981,6 @@ a {
     height: 100%;
     margin: 5% 0;
 
-    // border: 1px solid lime;
     p {
       padding-bottom: 1rem;
       font-size: 1.8rem;
@@ -917,8 +1028,8 @@ a {
     }
 
     .p-below {
-      padding-top: 10px;
-      font-size: 14px;
+      padding-top: 1rem;
+      font-size: 1.4rem;
       color: rgb(245, 119, 119);
     }
 
@@ -956,12 +1067,13 @@ a {
     display: flex;
     justify-content: flex-end;
 
-    
+
 
     &-inside {
       position: relative;
       width: 32rem;
-      height: 4.4rem;;
+      height: 4.4rem;
+      ;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -975,6 +1087,7 @@ a {
       transition: color 0.3s, background-color 0.3s;
       cursor: pointer;
     }
+
     &-inside:hover {
       background-color: $white;
       color: $brown;
@@ -1000,38 +1113,6 @@ input:placeholder-shown {
   font-style: italic; // makes placeholder italics in input
   font-size: 1.6rem;
   padding-left: 1rem;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  span {
-    font-size: 1.5rem;
-    color: $special-cream;
-  }
-
-  label {  
-    font-size: 1.2rem;
-    min-width: 30rem;
-    width: 100%;
-    font-weight: bold;
-  }
-
-  input,
-  select {
-    padding: 1rem;
-    width: 100%;
-    min-width: 30rem;
-    height: 45px;
-  }
-}
-
-textarea {
-  padding: 1rem;
-  resize: none;
 }
 
 .footer {
@@ -1065,6 +1146,7 @@ textarea {
 
   &__contact {
     flex-direction: column;
+
     p:nth-of-type(2) {
       margin-bottom: 1rem;
       margin-left: 0;
@@ -1073,14 +1155,17 @@ textarea {
 
   &__social {
     flex-direction: column;
+
     a {
       font-size: 5rem;
       color: $white;
       transition: color 0.1s;
     }
+
     a:hover {
       color: $creamy;
     }
+
     div {
       a {
         margin: 0.5rem;
@@ -1090,6 +1175,7 @@ textarea {
 
   &__payment {
     flex-direction: column;
+
     p {
       margin-bottom: 2rem;
     }
@@ -1114,7 +1200,7 @@ textarea {
     cursor: pointer;
   }
 
-  
+
   &__btn:hover {
     background-color: $white;
     color: $brown;
