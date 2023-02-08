@@ -886,22 +886,26 @@
                         </label>
                     </div>
                     <div class="form__contact">
-                        <p class="p-above">Jak możemy się z Tobą skontaktować?</p>
+                        <p class="p-above">Czy chciałbyś się z nami skontaktować?</p>
                         <div class="form__contact-checkbox">
-                            <div>
-                                <label for="phone">
+                            <div class="form__contact-checkbox--container">
+                                
+                                <div>
                                     <input type="checkbox" id="phone" />Telefonicznie
-                                </label>
-                            </div>
-                            <div>
-                                <label for="email">
+                                    <label for="phone" id="phone"></label>
+                                </div>
+
+                                <div>
                                     <input type="checkbox" id="email" />Poprzez wiadomość email
-                                </label>
-                            </div>
-                            <div>
-                                <label for="yes-no">
-                                    <input type="checkbox" id="yes-no" />Nie oczekuję kontaktu
-                                </label>
+                                    <label for="email" id="email"></label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="yesOrNo" />Nie oczekuję kontaktu
+                                    <label for="yes-no" id="yesOrNo"></label>
+                                </div>
+
+                                
                             </div>
                         </div>
                         <p class="p-below">Prosimy o wybranie formy kontaktu</p>
@@ -932,6 +936,7 @@
                 </div>
             </div>
         </section>
+        <button id="dupa">dupa</button>
     </main>
 
     <footer class="footer">

@@ -1030,32 +1030,34 @@ a {
     .p-below {
       padding-top: 1rem;
       font-size: 1.4rem;
-      color: rgb(245, 119, 119);
+      color: $error;
     }
 
     &-checkbox {
-      div {
-        display: flex;
+      &--container {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
+        // align-items: flex-start;
 
         label {
           display: flex;
+          justify-content: center;
           align-items: center;
           cursor: pointer;
-
-          input {
-            width: 20px;
-            height: 20px;
-            margin: 5px;
-            display: flex;
-            cursor: pointer;
-          }
-
         }
 
+        input {
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          margin: 0.5rem;
+          cursor: pointer;
+        }
+
+
       }
-
     }
-
   }
 
 

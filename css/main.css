@@ -894,19 +894,17 @@ a {
   font-size: 1.4rem;
   color: rgb(245, 119, 119);
 }
-.form__contact-checkbox div {
+.form__contact-checkbox--container label {
   display: flex;
-}
-.form__contact-checkbox div label {
-  display: flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.form__contact-checkbox div label input {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-  display: flex;
+.form__contact-checkbox--container input {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
   cursor: pointer;
 }
 .form__btn {
