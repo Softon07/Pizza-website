@@ -804,18 +804,14 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
-.form .row span {
-  font-size: 1.5rem;
-  color: #f1bd52;
-}
-.form .row label {
+.form .row .label {
   font-size: 1.2rem;
   min-width: 30rem;
   width: 100%;
   font-weight: bold;
 }
-.form .row input,
-.form .row select {
+.form .row .input,
+.form .row .select {
   padding: 1rem;
   width: 100%;
   min-width: 30rem;
@@ -889,23 +885,42 @@ a {
   font-size: 20px;
   padding-bottom: 10px;
 }
-.form__contact .p-below {
-  padding-top: 1rem;
-  font-size: 1.4rem;
-  color: rgb(245, 119, 119);
-}
-.form__contact-checkbox--container label {
+.form__contact-checkbox--container .old-label {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.form__contact-checkbox--container input {
+.form__contact-checkbox--container .new-phone,
+.form__contact-checkbox--container .new-email {
+  display: none;
+  margin-left: 3rem;
+  width: 50%;
+}
+.form__contact-checkbox--container .show-container {
+  display: block;
+}
+.form__contact-checkbox--container .old-input {
   display: inline-block;
   width: 2rem;
   height: 2rem;
   margin: 0.5rem;
   cursor: pointer;
+}
+.form__contact-checkbox--container .new-label {
+  min-width: 30rem;
+  width: 100%;
+  text-transform: uppercase;
+  padding-left: 0.3rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.form__contact-checkbox--container .new-input {
+  padding: 1rem;
+  width: 100%;
+  min-width: 30rem;
+  height: 45px;
+  border-radius: 0.5rem;
 }
 .form__btn {
   padding-top: 20px;
@@ -935,14 +950,14 @@ a {
   background-color: rgb(236, 237, 238);
   color: #724e2b;
 }
-.form__last-text {
+.form__text-below {
   display: flex;
   margin-top: 35px;
 }
-.form__last-text div {
+.form__text-below div {
   padding-right: 20px;
 }
-.form__last-text div i {
+.form__text-below div i {
   font-size: 30px;
   color: white;
 }

@@ -825,20 +825,20 @@
                         <div class="form__inputs">
 
                             <div class="row">
-                                <label for="user-name">IMIĘ<span> *</span></label>
-                                <input type="text" id="username" placeholder="np. Jan" required />
+                                <label class="label" for="user-name">IMIĘ</label>
+                                <input class="input" type="text" id="username" placeholder="np. Jan" required />
                                 <p class="error-text">Podaj imię</p>
                             </div>
 
                             <div class="row">
-                                <label for="surname">NAZWISKO<span> *</span></label>
-                                <input type="text" id="surname" placeholder="np. Kowalski" required />
+                                <label class="label" for="surname">NAZWISKO</label>
+                                <input class="input" type="text" id="surname" placeholder="np. Kowalski" required />
                                 <p class="error-text">Podaj nazwisko</p>
                             </div>
                             <div class="row">
-                                <label>PROSIMY O WYBRANIE SPOSOBU DOKONANIA
+                                <label class="label">PROSIMY O WYBRANIE SPOSOBU DOKONANIA
                                     ZAMÓWIENIA</label>
-                                <select id="select1">
+                                <select id="select1" class="select">
                                     <option value="" disabled selected hidden>Rodzaj zamówienia</option>
                                     <option value="1">W restauracji</option>
                                     <option value="2">Dostawa</option>
@@ -848,9 +848,9 @@
                                 <p class="error-text">Wybierz jedną z opcji</p>
                             </div>
                             <div class="row">
-                                <label for="kind-of-order">PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
-                                    TWOJA WIADOMOŚĆ<span>*</span></label>
-                                <select id="select2">
+                                <label class="label">PROSIMY O WYBRANIE RESTAURACJI PIZZERIADA, KTÓREJ DOTYCZY
+                                    TWOJA WIADOMOŚĆ</label>
+                                <select id="select2" class="select">
                                     <option value="" disabled selected hidden> Nazwa restauracji </option>
                                     <option value="DG">Dąbrowa Górnicza</option>
                                     <option value="SS">Sosnowiec</option>
@@ -858,8 +858,8 @@
                                 <p class="error-text">Wybierz jedną z opcji</p>
                             </div>
                             <div class="row">
-                                <label for="message-topic">PROSIMY O WYBRANIE TEMATU WIADOMOŚCI<span> *</span></label>
-                                <select id="select3">
+                                <label class="label">PROSIMY O WYBRANIE TEMATU WIADOMOŚCI</label>
+                                <select id="select3" class="select">
                                     <option value="" disabled selected hidden> Temat wiadomości </option>
                                     <option value="OP">Opinia pozytywna</option>
                                     <option value="ON">Opinia negatywna</option>
@@ -870,8 +870,8 @@
                             </div>
                         </div>
                         <div class="form__textarea row">
-                            <label for="text">TWOJA WIADOMOŚĆ<span> *</span></label>
-                            <textarea value="text" id="text" cols="10" rows="30" required></textarea>
+                            <label class="label" for="text">TWOJA WIADOMOŚĆ</label>
+                            <textarea class="textarea" value="text" id="text" cols="10" rows="30" required></textarea>
                             <p class="error-text">Podaj treść wiadomości</p>
                         </div>
                     </div>
@@ -888,31 +888,39 @@
                     <div class="form__contact">
                         <p class="p-above">Czy chciałbyś się z nami skontaktować?</p>
                         <div class="form__contact-checkbox">
+
                             <div class="form__contact-checkbox--container">
-                                
+
                                 <div>
-                                    <input type="checkbox" id="phone" />Telefonicznie
-                                    <label for="phone" id="phone"></label>
+                                    <input type="checkbox" id="phone" class="old-input" />Telefonicznie
+                                    <label for="phone" id="phone" class="old-label"></label>
+                                    <div class="new-phone">
+                                        <label class="new-label">Nr telefonu</label>
+                                        <input class="new-input" type="text" placeholder="np. +48 333 222 111">
+                                    </div>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" id="email" />Poprzez wiadomość email
-                                    <label for="email" id="email"></label>
+                                    <input type="checkbox" id="email" class="old-input" />Poprzez wiadomość email
+                                    <label for="email" id="email" class="old-label"></label>
+                                    <div class="new-email">
+                                        <label class="new-label">adres e-mail</label>
+                                        <input class="new-input" type="email" placeholder="np. jankowalski@email.pl">
+                                    </div>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" id="yesOrNo" />Nie oczekuję kontaktu
-                                    <label for="yes-no" id="yesOrNo"></label>
+                                    <input type="checkbox" id="yesOrNo" class="old-input" />Nie oczekuję
+                                    kontaktu
+                                    <label for="yes-no" id="yesOrNo" class="old-label"></label>
                                 </div>
 
-                                
                             </div>
                         </div>
-                        <p class="p-below">Prosimy o wybranie formy kontaktu</p>
                         <div class="form__btn">
                             <button type="submit" class="form__btn-inside">Wyślij</button>
                         </div>
-                        <div class="form__last-text">
+                        <div class="form__text-below">
                             <div>
                                 <i class="fa-solid fa-lock"></i>
                             </div>
@@ -936,7 +944,6 @@
                 </div>
             </div>
         </section>
-        <button id="dupa">dupa</button>
     </main>
 
     <footer class="footer">

@@ -927,20 +927,15 @@ a {
     flex-direction: column;
     align-items: flex-start;
 
-    span {
-      font-size: 1.5rem;
-      color: $special-cream;
-    }
-
-    label {
+    .label {
       font-size: 1.2rem;
       min-width: 30rem;
       width: 100%;
       font-weight: bold;
     }
 
-    input,
-    select {
+    .input,
+    .select {
       padding: 1rem;
       width: 100%;
       min-width: 30rem;
@@ -1027,32 +1022,50 @@ a {
       padding-bottom: 10px;
     }
 
-    .p-below {
-      padding-top: 1rem;
-      font-size: 1.4rem;
-      color: $error;
-    }
-
     &-checkbox {
       &--container {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-start;
-        // align-items: flex-start;
 
-        label {
+        .old-label {
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
         }
 
-        input {
+        .new-phone,
+        .new-email {
+          display: none;
+          margin-left: 3rem;
+          width: 50%;
+        }
+
+        .show-container {
+          display: block;
+        }
+
+        .old-input {
           display: inline-block;
           width: 2rem;
           height: 2rem;
           margin: 0.5rem;
           cursor: pointer;
+        }
+
+        .new-label {
+          min-width: 30rem;
+          width: 100%;
+          text-transform: uppercase;
+          padding-left: 0.3rem;
+          font-size: 1.05rem;
+          font-weight: bold;
+        }
+
+        .new-input {
+          padding: 1rem;
+          width: 100%;
+          min-width: 30rem;
+          height: 45px;
+          border-radius: 0.5rem;
         }
 
 
@@ -1096,7 +1109,7 @@ a {
     }
   }
 
-  &__last-text {
+  &__text-below {
     display: flex;
     margin-top: 35px;
 
@@ -1225,10 +1238,6 @@ input:placeholder-shown {
   }
 
 }
-
-// @media (max-width: 1250px) {
-
-// }
 
 @import "./large.scss";
 @import "./medium.scss";
