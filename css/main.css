@@ -824,13 +824,15 @@ a {
   border-radius: 0.5rem;
 }
 .form .row.error input,
+.form .new-el.error input,
 .form .row.error select,
 .form .form__textarea.error textarea {
-  border: 1px solid rgb(241, 189, 82);
-  background-color: rgba(241, 189, 82, 0.06);
+  border: 1px solid rgb(237, 34, 34);
 }
 .form .row .error-text,
-.form .form__textarea .error-text {
+.form .new-el .error-text,
+.form .form__textarea .error-text,
+.form .form__contact-checkbox--container .error-text {
   margin-top: 0.3rem;
   font-size: 1.3rem;
   font-style: italic;
@@ -838,7 +840,9 @@ a {
   visibility: hidden;
 }
 .form .row.error .error-text,
-.form .form__textarea.error .error-text {
+.form .new-el.error .error-text,
+.form .form__textarea.error .error-text,
+.form .form__contact-checkbox--container.error .error-text {
   visibility: visible;
 }
 .form__attachment {

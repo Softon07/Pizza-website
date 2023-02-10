@@ -951,14 +951,16 @@ a {
   }
 
   .row.error input,
+  .new-el.error input,
   .row.error select,
   .form__textarea.error textarea {
-    border: 1px solid rgb(241, 189, 82);
-    background-color: rgba(241, 189, 82, 0.060);
+    border: 1px solid rgb(237, 34, 34);
   }
 
   .row .error-text,
-  .form__textarea .error-text {
+  .new-el .error-text,
+  .form__textarea .error-text,
+  .form__contact-checkbox--container .error-text {
     margin-top: 0.3rem;
     font-size: 1.3rem;
     font-style: italic;
@@ -967,7 +969,9 @@ a {
   }
 
   .row.error .error-text,
-  .form__textarea.error .error-text {
+  .new-el.error .error-text,
+  .form__textarea.error .error-text,
+  .form__contact-checkbox--container.error .error-text {
     visibility: visible;
   }
 
@@ -1067,8 +1071,6 @@ a {
           height: 45px;
           border-radius: 0.5rem;
         }
-
-
       }
     }
   }

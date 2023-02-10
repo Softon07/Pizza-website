@@ -891,30 +891,31 @@
 
                             <div class="form__contact-checkbox--container">
 
-                                <div>
+                                <div class="boxes">
                                     <input type="checkbox" id="phone" class="old-input" />Telefonicznie
-                                    <label for="phone" id="phone" class="old-label"></label>
-                                    <div class="new-phone">
+                                    <label for="phone" class="old-label"></label>
+                                    <div class="new-phone new-el">
                                         <label class="new-label">Nr telefonu</label>
-                                        <input class="new-input" type="text" placeholder="np. +48 333 222 111">
+                                        <input class="new-input" id="newPhone" type="text" placeholder="np. 518 462 918">
+                                        <p class="error-text">Nieprawidłowy numer telefonu</p>
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="boxes">
                                     <input type="checkbox" id="email" class="old-input" />Poprzez wiadomość email
-                                    <label for="email" id="email" class="old-label"></label>
-                                    <div class="new-email">
+                                    <label for="email" class="old-label"></label>
+                                    <div class="new-email new-el">
                                         <label class="new-label">adres e-mail</label>
-                                        <input class="new-input" type="email" placeholder="np. jankowalski@email.pl">
+                                        <input class="new-input" id="newEmail" type="email" placeholder="np. jankowalski@email.pl">
+                                        <p class="error-text">Nieprawidłowy adres email</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" id="yesOrNo" class="old-input" />Nie oczekuję
+                                    <input type="checkbox" id="yesOrNo" class="old-input" checked />Nie oczekuję
                                     kontaktu
                                     <label for="yes-no" id="yesOrNo" class="old-label"></label>
                                 </div>
-
                             </div>
                         </div>
                         <div class="form__btn">
