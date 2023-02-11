@@ -1,13 +1,4 @@
-// @import "./colors";
-$brown: #724e2b;
-$popup: #866545;
-$white: rgb(236, 237, 238);
-$cocoa: #BFA182;
-$skin: #e9c19c;
-$creamy: #ffcc80;
-$special-cream: #f1bd52;
-$border-color: #bfa182;
-$error: rgb(245, 119, 119);
+@import "./colors";
 
 *,
 *::before,
@@ -69,6 +60,53 @@ a {
 
 .logo::first-letter {
   text-transform: uppercase;
+}
+
+.shopping-cart {
+  padding: 2rem 1rem;
+  position: fixed;
+  bottom: 8rem;
+  right: 8rem;
+  width: 16rem;
+  height: 6.5rem;
+  color: $white;
+  background-color: $brown;
+  border: 1px solid $white;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  z-index: 1;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.1s;
+
+  .counter-container {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -1rem;
+    right: -1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $brown;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+
+  .counter {
+    text-transform: lowercase;
+    font-weight: normal;
+    font-size: 2rem;
+    color: $creamy;
+
+  }
+}
+
+.shopping-cart:hover {
+  border: 1px solid $white;
+  background-color: $creamy;
+  color: $brown;
 }
 
 .header {

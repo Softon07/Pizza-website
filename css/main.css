@@ -58,6 +58,50 @@ a {
   text-transform: uppercase;
 }
 
+.shopping-cart {
+  padding: 2rem 1rem;
+  position: fixed;
+  bottom: 8rem;
+  right: 8rem;
+  width: 16rem;
+  height: 6.5rem;
+  color: rgb(236, 237, 238);
+  background-color: #724e2b;
+  border: 1px solid rgb(236, 237, 238);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  z-index: 1;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.shopping-cart .counter-container {
+  width: 3.5rem;
+  height: 3.5rem;
+  top: -1rem;
+  right: -1rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #724e2b;
+  border: 1px solid rgb(236, 237, 238);
+  border-radius: 50%;
+}
+.shopping-cart .counter {
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #ffcc80;
+}
+
+.shopping-cart:hover {
+  border: 1px solid rgb(236, 237, 238);
+  background-color: #ffcc80;
+  color: #724e2b;
+}
+
 .header {
   max-width: 100%;
   max-height: 100vh;
