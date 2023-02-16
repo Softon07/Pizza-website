@@ -47,14 +47,6 @@
             </div>
         </nav>
 
-        <button class="shopping-cart">
-            Koszyk
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div class="counter-container">
-                <p class="counter">0</p>
-            </div>
-        </button>
-
         <header class="header" id="home">
             <video src="./video/Pizza.mp4" class="header__video" loop muted autoplay></video>
             <img src="./img/pizzaheader.jpg" alt="sie później uzupełni" class="header__img" />
@@ -466,6 +458,27 @@
         </section>
 
         <section class="menu wrapper" id="menu">
+
+            <button class="shopping-cart">
+                Koszyk
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="counter-container">
+                    <p class="counter">0</p>
+                </div>
+            </button>
+
+            <div class="modal modal-item">
+                <p class="pizza-name"></p>
+                <input type="radio">Mała
+                <input type="radio">Średnia
+                <input type="radio">Duża
+                <button id="closeModalBtn">Kontynuuj zakupy</button>
+            </div>
+
+            <!-- <div class="modal modal-general">
+                <p>modal general</p>
+            </div> -->
+
             <h2 class="menu__heading">Nasze Menu</h2>
             <div class="menu__list">
                 <a class="menu-pizza">Pizza</a>
@@ -489,7 +502,7 @@
                         <p>25,00zł</p>
                         <p>36,00zł</p>
                     </div>
-                    <a class="pizza__btn element__btn">Dodaj do koszyka</a>
+                    <a class="pizza__btn element__btn" id="margharita">Dodaj do koszyka</a>
                 </div>
 
                 <div class="pizza__list element__list">

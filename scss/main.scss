@@ -62,53 +62,6 @@ a {
   text-transform: uppercase;
 }
 
-.shopping-cart {
-  padding: 2rem 1rem;
-  position: fixed;
-  bottom: 8rem;
-  right: 8rem;
-  width: 16rem;
-  height: 6.5rem;
-  color: $white;
-  background-color: $brown;
-  border: 1px solid $white;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  z-index: 1;
-  border-radius: 5rem;
-  cursor: pointer;
-  transition: 0.1s;
-
-  .counter-container {
-    width: 3.5rem;
-    height: 3.5rem;
-    top: -1rem;
-    right: -1rem;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $brown;
-    border: 1px solid $white;
-    border-radius: 50%;
-  }
-
-  .counter {
-    text-transform: lowercase;
-    font-weight: normal;
-    font-size: 2rem;
-    color: $creamy;
-
-  }
-}
-
-.shopping-cart:hover {
-  border: 1px solid $white;
-  background-color: $creamy;
-  color: $brown;
-}
-
 .header {
   max-width: 100%;
   max-height: 100vh;
@@ -641,6 +594,81 @@ a {
   margin-bottom: 10rem;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.4);
+
+  .shopping-cart {
+    padding: 2rem 1rem;
+    position: fixed;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    width: 16rem;
+    height: 6.5rem;
+    color: $white;
+    background-color: $brown;
+    border: 1px solid $white;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    z-index: 1;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 0.1s;
+  
+    .counter-container {
+      width: 3.5rem;
+      height: 3.5rem;
+      top: -1rem;
+      right: -1rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $brown;
+      border: 1px solid $white;
+      border-radius: 50%;
+    }
+  
+    .counter {
+      text-transform: lowercase;
+      font-weight: normal;
+      font-size: 2rem;
+      color: $creamy;
+
+    }
+  }
+  
+  .shopping-cart:hover {
+    border: 1px solid $white;
+    background-color: $creamy;
+    color: $brown;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    top: -600px;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 1;
+    transition: top 0.8s;
+  }
+
+  .show-modal {
+    top: 150px;
+  }
+
+  .modal-item {
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+  }
+  
+  // .modal-general {
+  //   transform: translateX(-50%);
+  //   background-color: red;
+  // }
 
   &__heading {
     display: flex;
