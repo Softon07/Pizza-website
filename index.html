@@ -467,12 +467,60 @@
                 </div>
             </button>
 
-            <div class="modal modal-item">
-                <p class="pizza-name"></p>
-                <input type="radio">Mała
-                <input type="radio">Średnia
-                <input type="radio">Duża
-                <button id="closeModalBtn">Kontynuuj zakupy</button>
+            <div class="modal modal-pizza">
+                <div class="close-btn-container">
+                    <button class="close-btn" id="closeModalBtn">X</button>
+                </div>
+                <p class="el-name"></p>
+                <div class="line"></div>
+                <div class="choice pizza-size">
+                    <p class="category-name">Rozmiar</p>
+                    <div class="inputs">
+                        <input type="radio" id="small">Mała
+                        <input type="radio" id="medium">Średnia
+                        <input type="radio" id="big">Duża
+                    </div>
+                </div>
+
+                <div class="choice pizza-base">
+                    <p class="category-name">Ciasto</p>
+                    <div class="inputs">
+                        <input type="radio" id="flat">Cieńkie
+                        <input type="radio" id="thick">Grube
+                    </div>
+                </div>
+
+                <div class="pizza-ingredients">
+                    <div class="last">
+                        <p class="category-name">Składniki</p>
+                        <p class="ingredients"></p>
+                    </div>
+                </div>
+                <div class="add-item-btn-container">
+                    <button class="btn" id="addItemBtn">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="modal modal-sauce">
+                <div class="close-btn-container">
+                    <button class="close-btn" id="closeModalBtn">X</button>
+                </div>
+                <p class="el-name"></p>
+                <p>sosy</p>
+                <div class="add-item-btn-container">
+                    <button class="btn" id="addItemBtn">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="modal modal-drinks">
+                <div class="close-btn-container">
+                    <button class="close-btn" id="closeModalBtn">X</button>
+                </div>
+                <p class="el-name"></p>
+                <p>Napoje</p>
+                <div class="add-item-btn-container">
+                    <button class="btn" id="addItemBtn">Dodaj do koszyka</button>
+                </div>
             </div>
 
             <!-- <div class="modal modal-general">

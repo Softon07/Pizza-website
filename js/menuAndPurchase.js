@@ -5,6 +5,9 @@ const sections = {
 };
 
 const btns = document.querySelectorAll('.menu__list a');
+const pizza = document.querySelector('.pizza');
+const sauce = document.querySelector('.sauce');
+const drinks = document.querySelector('.drinks');
 
 // change section
 btns.forEach(btn => {
@@ -16,32 +19,101 @@ btns.forEach(btn => {
     });
 });
 
-const modal = document.querySelector('.modal');
-const pizzaNameElement = document.querySelector('.modal-item .pizza-name');
-const closeModalBtn = document.querySelector('#closeModalBtn');
+const modalPizza = document.querySelector('.modal-pizza');
+const modalSauce = document.querySelector('.modal-sauce');
+const modalDrinks = document.querySelector('.modal-drinks');
+
+const menuElement = document.querySelectorAll('.modal .el-name');
+const closeModalBtn = document.querySelectorAll('#closeModalBtn');
 
 const showModal = () => {
-    modal.classList.add('show-modal');
+    if (!pizza.classList.contains('not-visible')) {
+        modalPizza.classList.add('show-modal');
+    } else if (!sauce.classList.contains('not-visible')) {
+        modalSauce.classList.add('show-modal');
+    } else if (!drinks.classList.contains('not-visible')) {
+        modalDrinks.classList.add('show-modal');
+    }
 }
 
 // pressed button
-const pizzaBtns = document.querySelectorAll('.element__btn');
-pizzaBtns.forEach(btn => {
+const elementsBtns = document.querySelectorAll('.element__btn');
+elementsBtns.forEach(btn => {
     btn.addEventListener('click', () => {
+        
+        const nameElement = btn.closest('div').querySelector('p').textContent;
+        console.log(nameElement);
 
-        // modal has: pizza's name
-        const pizzaName = btn.closest('div').querySelector('p').textContent;
-        console.log(pizzaName);
+        // dynamiczne nadanie nazwy na samej górze na modalu do przedmiotu który się kupuje.
+        menuElement.forEach(el => {
+            el.textContent = nameElement;
+        });
 
-        pizzaNameElement.textContent = pizzaName;
         // show modal
         showModal();
 
     });
 });
 
-closeModalBtn.addEventListener('click', () => {
-    modal.classList.remove('show-modal');
-})
+const closeModal = () => {
+    modalPizza.classList.remove('show-modal');
+    modalSauce.classList.remove('show-modal');
+    modalDrinks.classList.remove('show-modal');
+    console.log('wylaczono modal');
+}
 
+closeModalBtn.forEach(el => {
+    el.addEventListener('click', () => {
+        closeModal();
+        cleanModal();
+    });
+});
 
+const small = document.querySelector('#small');
+const medium = document.querySelector('#medium');
+const big = document.querySelector('#big');
+const flat = document.querySelector('#flat');
+const thick = document.querySelector('#thick');
+
+const cleanModal = () => {
+    [small, medium, big, flat, thick].forEach(el => {
+        el.checked = false;
+    });
+}
+
+const handleRadio = (el, small, medium, big, flat, thick) => {
+    if (el.checked && el === small) {
+        medium.checked = false;
+        big.checked = false;
+    } else if (el.checked && el === medium) {
+        small.checked = false;
+        big.checked = false;
+    } else if (el.checked && el === big) {
+        small.checked = false;
+        medium.checked = false;
+    }
+
+    if (el.checked && el === flat) {
+        thick.checked = false;
+    } else if (el.checked && el === thick) {
+        flat.checked = false;
+    }
+}
+
+[small, medium, big, flat, thick].forEach(el => {
+    el.addEventListener('click', () => {
+        handleRadio(el, small, medium, big, flat, thick);
+    });
+});
+
+// add item to shooping-cart
+const addItemBtn = document.querySelectorAll('#addItemBtn');
+
+addItemBtn.forEach(el => {
+    el.addEventListener('click', () => {
+        console.log('dodano do koszyka');
+        closeModal();
+        cleanModal();
+        // addItemToCart();
+    });
+});
