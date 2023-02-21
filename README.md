@@ -6,7 +6,7 @@
 
 ## Link
 
-Możesz zobaczyć działającą wersję projektu [tutaj](mnedza.github.io/Pizzeriada/).
+Możesz zobaczyć działającą wersję projektu [tutaj](https://mnedza.github.io/Pizzeriada/).
 
 
 ## Użyte technologie
