@@ -651,10 +651,10 @@ a {
     top: -600px;
     left: 50%;
     width: 500px;
-    height: 600px;
+    height: auto;
     background-color: white;
     border: 1px solid black;
-    z-index: 1;
+    z-index: 101;
     transition: top 0.8s;
 
     transform: translateX(-50%);
@@ -683,6 +683,15 @@ a {
     font-size: 1.8rem;
     cursor: pointer;
     transition: 0.3s;
+  }
+
+  .products-list {
+    .product-name {
+      margin: 1rem 0;
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #ddd;
+    }
   }
 
   .close-btn:hover {
@@ -721,8 +730,8 @@ a {
 
     input {
       margin: 0 1rem;
-      width: 18px;
-      height: 18px;
+      width: 1.8rem;
+      height: 1.8rem;
       cursor: pointer;
     }
 
@@ -732,7 +741,7 @@ a {
   }
 
   .last {
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
   }
 
   .add-item-btn-container {
@@ -772,6 +781,19 @@ a {
   //   transform: translateX(-50%);
   //   background-color: red;
   // }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+  }
+
+
 
   &__heading {
     display: flex;
@@ -850,6 +872,8 @@ a {
       }
     }
 
+
+
     &__prices {
       height: auto;
       display: flex;
@@ -884,6 +908,13 @@ a {
     &__btn:hover {
       color: #724e2b;
       background-color: #ddd;
+    }
+  }
+
+  .drinks {
+
+    &__prices {
+      flex-direction: column;
     }
   }
 
