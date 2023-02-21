@@ -3,10 +3,8 @@
     display: none;
   }
 
-  // NAV
   .nav-desktop {
     width: 100vw;
-    // height: auto;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -17,17 +15,12 @@
     &__item {
       display: flex;
       justify-content: space-between;
-      // align-items: center;
       font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
       color: #000;
-
-      // margin: 0.3rem 0;
-      // margin-right: 0;
       padding: 0 0.8em;
-      // padding-right: 0;
       font-size: 1.8rem;
     }
 
@@ -36,7 +29,6 @@
       font-family: "Caveat", cursive;
       font-weight: normal;
       text-transform: lowercase;
-      // text-decoration: none;
       color: rgb(241, 189, 82);
     }
 
