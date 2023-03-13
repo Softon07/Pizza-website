@@ -1,20 +1,20 @@
 # Pizzeriada
 
-## Opis
+## Description
 
-"Pizzeriada" to frontendowy projekt strony pizzerii, który pozwala użytkownikom zobaczyć podstawowe informacje o pizzerii, przejrzeć menu, przeczytać opinie innych klientów i skontaktować się z restauracją. Strona jest responsywna, co oznacza, że można ją wygodnie przeglądać na różnych urządzeniach, w tym na smartfonach i tabletach.
+"Pizzeriada" is a front-end design for a pizzeria website that allows users to see basic information about the pizzeria, browse the menu, read reviews from other customers and contact the restaurant. The site is responsive, which means it can be viewed comfortably on a variety of devices, including smartphones and tablets.
 
 ## Link
 
-Możesz zobaczyć działającą wersję projektu [tutaj](https://mnedza.github.io/Pizzeriada/).
+You can see a working version of the project [tutaj](https://mnedza.github.io/Pizzeriada/).
 
 
-## Użyte technologie
+## Technologies used
 
 - HTML
 - SCSS
 - JavaScript
 
-## Autor
+## Author
 
 - Marcel Nędza
