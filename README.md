@@ -130,13 +130,9 @@ As well as many informational sections and their responsive counterparts for mob
 ## Struktura projektu
 
     W pliku index.html zastosowano modułową strukturę kodu, importując poszczególne pliki JavaScript i SCSS. Dzięki temu kod jest bardziej przejrzysty i łatwiejszy do utrzymania.
-
     W stylowaniu strony wykorzystano metodologię BEM (Block Element Modifier), co pozwoliło na lepszą organizację i strukturyzację kodu CSS. Dzięki temu stylowanie jest bardziej przejrzyste i łatwiejsze do utrzymania.
-
     Projekt został zaprojektowany zgodnie z zasadami UX (User Experience) i UI (User Interface), co przyczyniło się do lepszej użyteczności strony i jej atrakcyjnego wyglądu.
-
     Kod JavaScript został napisany w sposób łatwy do zrozumienia i utrzymania. Zastosowane zostały dobre praktyki programistyczne, takie jak unikanie powtarzającego się kodu co pozwala na szybsze zrozumienie kodu przez inne osoby.
-
     Projekt jest responsywny, co oznacza, że strona dostosowuje się do różnych rozmiarów ekranów. Dzięki temu użytkownicy mogą łatwo przeglądać stronę na różnych urządzeniach, takich jak komputery, tablety i smartfony.
 
 ## Opis projektu
