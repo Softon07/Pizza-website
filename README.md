@@ -73,23 +73,23 @@ As well as many informational sections and their responsive counterparts for mob
 
     Contact form:
 
-![hero-page](contact-form.png) 
+![hero-page](img/contact-form.png) 
 
     Mobile navigation:
 
-![hero-page](mobile-nav.png) 
+![hero-page](img/mobile-nav.png) 
 
     Photo gallery:
 
-![hero-page](slider.png) 
+![hero-page](img/slider.png) 
 
     Customer review section:
 
-![hero-page](opinion1.png) 
+![hero-page](img/opinion1.png) 
 
     After adding a review:
 
-![hero-page](opinion2.png) 
+![hero-page](img/opinion2.png) 
 
 
 
@@ -158,27 +158,27 @@ Oraz wiele sekcji informacyjnych oraz ich responsywne odpowiedniki na urządzeni
 
     Strona główna pizzerii:
 
-![hero-page](hero-page.png) 
+![hero-page](img/hero-page.png) 
 
     Formularz kontaktowy:
 
-![hero-page](contact-form.png) 
+![hero-page](img/contact-form.png) 
 
     Nawigacja mobilna:
 
-![hero-page](mobile-nav.png) 
+![hero-page](img/mobile-nav.png) 
 
     Galeria zdjęć:
 
-![hero-page](slider.png) 
+![hero-page](img/slider.png) 
 
     Sekcja dzielenia się opinią:
 
-![hero-page](opinion1.png) 
+![hero-page](img/opinion1.png) 
 
     po dodaniu opinii:
 
-![hero-page](opinion2.png) 
+![hero-page](img/opinion2.png) 
 
 
 
