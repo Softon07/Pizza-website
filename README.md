@@ -19,39 +19,39 @@
 <strong>Access the website directly through the link:</strong>
 [Pizzeriada](https://mnedza.github.io/Pizzeriada/)
 
-    Alternatively, download the project from the GitHub repository:
+Alternatively, download the project from the GitHub repository:
 
 
-`git clone https://github.com/mnedza/Pizzeriada.git`
+    git clone https://github.com/mnedza/Pizzeriada.git
 
-    Navigate to the project directory:
+Navigate to the project directory:
 
-`cd Pizzeriada`
+    cd Pizzeriada
 
-    Launch the index.html file in your browser.
+Launch the index.html file in your browser.
 
 ## Technologies Used
 
-    - JavaScript
-    - SCSS
-    - HTML
+- JavaScript
+- SCSS
+- HTML
 
 ## Project Structure
 
-    The index.html file has a modular code structure, importing individual JavaScript and SCSS files. This makes the code more organized and easier to maintain.
+The index.html file has a modular code structure, importing individual JavaScript and SCSS files. This makes the code more organized and easier to maintain.
 
-    BEM (Block Element Modifier) methodology was used to style the page, allowing for better organization and structure of the CSS code. This makes styling more clear and easier to maintain.
+BEM (Block Element Modifier) methodology was used to style the page, allowing for better organization and structure of the CSS code. This makes styling more clear and easier to maintain.
 
-    The project was designed in accordance with UX (User Experience) and UI (User Interface) principles, which contributed to better usability and an attractive appearance of the website.
+The project was designed in accordance with UX (User Experience) and UI (User Interface) principles, which contributed to better usability and an attractive appearance of the website.
 
-    The JavaScript code was written in an easily understandable and maintainable way. Good programming practices were applied, such as avoiding repetitive code, which allows other people to understand the code faster.
+The JavaScript code was written in an easily understandable and maintainable way. Good programming practices were applied, such as avoiding repetitive code, which allows other people to understand the code faster.
 
-    The project is responsive, which means that the website adapts to different screen sizes. This makes it easy for users to browse the website on various devices, such as computers, tablets, and smartphones.
+The project is responsive, which means that the website adapts to different screen sizes. This makes it easy for users to browse the website on various devices, such as computers, tablets, and smartphones.
 
 
 ## Project Description
 
-    Pizzeriada is my first personal project of a website in Polish language.
+Pizzeriada is my first personal project of a website in Polish language.
 
   
 `What elements does the website contain?`
@@ -67,41 +67,40 @@
 
 As well as many informational sections and their responsive counterparts for mobile devices, such as the pizzeria homepage.
 
-    Pizzeria homepage:
+`Pizzeria homepage:`
 
 ![hero-page](img/hero-page.png) 
 
-    Contact form:
+`Contact form:`
 
 ![hero-page](img/contact-form.png) 
 
-    Mobile navigation:
+`Mobile navigation:`
 
 ![hero-page](img/mobile-nav.png) 
 
-    Photo gallery:
+`Photo gallery:`
 
 ![hero-page](img/slider.png) 
 
-    Customer review section:
+`Customer review section:`
 
 ![hero-page](img/opinion1.png) 
 
-    After adding a review:
+`After adding a review:`
 
 ![hero-page](img/opinion2.png) 
 
 
 
 ## Summary
-    Thanks to creating this project, I have learned the basics of creating websites in HTML, CSS, and JavaScript. Additionally, I gained knowledge about UX, UI, and the SCSS preprocessor.
+Thanks to creating this project, I have learned the basics of creating websites in HTML, CSS, and JavaScript. Additionally, I gained knowledge about UX, UI, and the SCSS preprocessor.
 
 
 ## Authors
-    1. Marcel Nędza
+1. Marcel Nędza
 
-
-  </div>
+</div>
   <div class="tab-pane fade" id="polish" role="tabpanel" aria-labelledby="polish-tab">
 
 # Pizzeriada
@@ -111,37 +110,37 @@ As well as many informational sections and their responsive counterparts for mob
 <strong>Wejdź na stronę bezpośrednio przez link:</strong>
 [Pizzeriada](https://mnedza.github.io/Pizzeriada/)
 
-    Lub pobierz projekt z repozytorium GitHub:
+Lub pobierz projekt z repozytorium GitHub:
 
-`git clone https://github.com/mnedza/Pizzeriada.git`
+    git clone https://github.com/mnedza/Pizzeriada.git
 
-    Przejdź do katalogu z projektem:
+Przejdź do katalogu z projektem:
 
-`cd Pizzeriada`
+    cd Pizzeriada
 
-    Uruchom plik index.html w przeglądarce.
+Uruchom plik index.html w przeglądarce.
 
 ## Użyte technologie
 
-    - JavaScript
-    - SCSS
-    - HTML
+- JavaScript
+- SCSS
+- HTML
 
 ## Struktura projektu
-
-    W pliku index.html zastosowano modułową strukturę kodu, importując poszczególne pliki JavaScript i SCSS. Dzięki temu kod jest bardziej przejrzysty i łatwiejszy do utrzymania.  
   
-    W stylowaniu strony wykorzystano metodologię BEM (Block Element Modifier), co pozwoliło na lepszą organizację i strukturyzację kodu CSS. Dzięki temu stylowanie jest bardziej przejrzyste i łatwiejsze do utrzymania.
+W pliku index.html zastosowano modułową strukturę kodu, importując poszczególne pliki JavaScript i SCSS. Dzięki temu kod jest bardziej przejrzysty i łatwiejszy do utrzymania.  
+  
+W stylowaniu strony wykorzystano metodologię BEM (Block Element Modifier), co pozwoliło na lepszą organizację i strukturyzację kodu CSS. Dzięki temu stylowanie jest bardziej przejrzyste i łatwiejsze do utrzymania.
 
-    Projekt został zaprojektowany zgodnie z zasadami UX (User Experience) i UI (User Interface), co przyczyniło się do lepszej użyteczności strony i jej atrakcyjnego wyglądu.
+Projekt został zaprojektowany zgodnie z zasadami UX (User Experience) i UI (User Interface), co przyczyniło się do lepszej użyteczności strony i jej atrakcyjnego wyglądu.
 
-    Kod JavaScript został napisany w sposób łatwy do zrozumienia i utrzymania. Zastosowane zostały dobre praktyki programistyczne, takie jak unikanie powtarzającego się kodu co pozwala na szybsze zrozumienie kodu przez inne osoby.
+Kod JavaScript został napisany w sposób łatwy do zrozumienia i utrzymania. Zastosowane zostały dobre praktyki programistyczne, takie jak unikanie powtarzającego się kodu co pozwala na szybsze zrozumienie kodu przez inne osoby.
 
-    Projekt jest responsywny, co oznacza, że strona dostosowuje się do różnych rozmiarów ekranów. Dzięki temu użytkownicy mogą łatwo przeglądać stronę na różnych urządzeniach, takich jak komputery, tablety i smartfony.
+Projekt jest responsywny, co oznacza, że strona dostosowuje się do różnych rozmiarów ekranów. Dzięki temu użytkownicy mogą łatwo przeglądać stronę na różnych urządzeniach, takich jak komputery, tablety i smartfony.
 
 ## Opis projektu
 
-    Pizzeriada to mój pierwszy prywatny projekt strony internetowej w języku polskim. 
+Pizzeriada to mój pierwszy prywatny projekt strony internetowej w języku polskim. 
   
 `Jakie elementy zawiera strona?`
 
@@ -156,36 +155,36 @@ As well as many informational sections and their responsive counterparts for mob
 
 Oraz wiele sekcji informacyjnych oraz ich responsywne odpowiedniki na urządzenia mobilne np. strona główna pizzerii.
 
-    Strona główna pizzerii:
+`Strona główna pizzerii:`
 
 ![hero-page](img/hero-page.png) 
 
-    Formularz kontaktowy:
+`Formularz kontaktowy:`
 
 ![hero-page](img/contact-form.png) 
 
-    Nawigacja mobilna:
+`Nawigacja mobilna:`
 
 ![hero-page](img/mobile-nav.png) 
 
-    Galeria zdjęć:
+`Galeria zdjęć:`
 
 ![hero-page](img/slider.png) 
 
-    Sekcja dzielenia się opinią:
+`Sekcja dzielenia się opinią:`
 
 ![hero-page](img/opinion1.png) 
 
-    po dodaniu opinii:
+`po dodaniu opinii:`
 
 ![hero-page](img/opinion2.png) 
 
 
 
 ## Podsumowanie
-    Dzięki stworzeniu tego projektu nauczyłem się podstaw tworzenia stron internetowych w HTML, CSS oraz JavaScript. Oprócz tego, zdobyłem wiedzę na temat UX, UI oraz preprocesora SCSS.
+Dzięki stworzeniu tego projektu nauczyłem się podstaw tworzenia stron internetowych w HTML, CSS oraz JavaScript. Oprócz tego, zdobyłem wiedzę na temat UX, UI oraz preprocesora SCSS.
 
 ## Autorzy
-    1. Marcel Nędza
+1. Marcel Nędza
   </div>
 </div>
