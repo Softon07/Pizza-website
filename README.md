@@ -17,7 +17,7 @@
 ## Project Launch
 
 <strong>Access the website directly through the link:</strong>
-[Pizzeriada](https://mnedza.github.io/Pizzeriada/)
+[Pizzeriada](https://softon07.github.io/pizza-website/)
 
 Alternatively, download the project from the GitHub repository:
 
@@ -108,7 +108,7 @@ Thanks to creating this project, I have learned the basics of creating websites 
 ## Uruchomienie projektu
 
 <strong>Wejdź na stronę bezpośrednio przez link:</strong>
-[Pizzeriada](https://mnedza.github.io/Pizzeriada/)
+[Pizzeriada](https://softon07.github.io/pizza-website/)
 
 Lub pobierz projekt z repozytorium GitHub:
 
