@@ -17,7 +17,7 @@
 ## Project Launch
 
 <strong>Access the website directly through the link:</strong>
-[Pizzeriada](https://softon07.github.io/pizza-website/)
+[Pizzeriada](https://softon07.github.io/Pizza-website/)
 
 Alternatively, download the project from the GitHub repository:
 
